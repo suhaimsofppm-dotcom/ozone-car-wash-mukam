@@ -345,7 +345,7 @@
 
     .car-animation-container {
       position: relative;
-      min-height: clamp(250px, 40vw, 350px);
+      min-height: clamp(200px, 40vw, 300px);
       background: var(--background-light);
       border-radius: 10px;
       border: 1px solid var(--border-color);
@@ -353,57 +353,59 @@
     }
 
     .road-and-car {
-      position: relative;
+      position: absolute;
+      bottom: 0;
       width: 100%;
-      height: clamp(80px, 20vw, 100px);
+      height: clamp(100px, 25vw, 120px);
     }
 
     .road {
       position: absolute;
       bottom: 20px;
       width: 100%;
-      height: 4px;
-      background: #ccc;
+      height: 6px;
+      background: linear-gradient(90deg, #ccc 50%, transparent 50%);
+      background-size: 20px 6px;
     }
 
     .animated-car-body {
       position: absolute;
-      bottom: 22px;
-      left: clamp(-120px, -25vw, -150px);
-      width: clamp(90px, 20vw, 120px);
-      height: clamp(30px, 8vw, 40px);
+      bottom: 26px;
+      left: -150px;
+      width: clamp(100px, 22vw, 130px);
+      height: clamp(35px, 9vw, 45px);
       background: var(--primary-color);
-      border-radius: 10px 10px 0 0;
-      animation: drive-across 7s linear infinite 1s;
+      border-radius: 12px 12px 0 0;
+      animation: drive-across 6s linear infinite;
     }
 
     .animated-car-top {
       position: absolute;
-      top: clamp(-15px, -4vw, -20px);
-      left: clamp(15px, 4vw, 20px);
-      width: clamp(50px, 12vw, 70px);
-      height: clamp(20px, 5vw, 30px);
+      top: -20px;
+      left: clamp(20px, 5vw, 25px);
+      width: clamp(60px, 14vw, 80px);
+      height: clamp(25px, 6vw, 35px);
       background: var(--primary-color);
-      border-radius: 10px 10px 0 0;
+      border-radius: 8px 8px 0 0;
     }
 
     .wheel {
       position: absolute;
       bottom: -10px;
-      width: clamp(20px, 5vw, 25px);
-      height: clamp(20px, 5vw, 25px);
+      width: clamp(22px, 5.5vw, 28px);
+      height: clamp(22px, 5.5vw, 28px);
       background: #333;
       border-radius: 50%;
-      border: 3px solid #fff;
-      animation: spin-wheels 0.7s linear infinite 1s;
+      border: 4px solid #fff;
+      animation: spin-wheels 0.5s linear infinite;
     }
 
-    .front-wheel { right: clamp(8px, 2vw, 10px); }
-    .back-wheel { left: clamp(8px, 2vw, 10px); }
+    .front-wheel { right: clamp(10px, 2.5vw, 12px); }
+    .back-wheel { left: clamp(10px, 2.5vw, 12px); }
 
     @keyframes drive-across {
-      0% { left: clamp(-120px, -25vw, -150px); }
-      100% { left: 110%; }
+      0% { left: -150px; }
+      100% { left: calc(100% + 150px); }
     }
 
     @keyframes spin-wheels {
@@ -771,6 +773,7 @@
 
       .car-animation-container {
         margin: 0 auto;
+        max-width: 500px;
       }
     }
 
@@ -1266,5 +1269,3 @@
   </script>
 </body>
 </html>
-
-
