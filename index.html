@@ -4,42 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <!-- SEO Meta Tags -->
+  <!-- SEO META TAGS -->
   <title>Ozon Detailing & Car Wash | Premium Auto Care</title>
-  <meta name="description" content="Ozon Detailing offers premium car and bike detailing, ceramic coating, glass coating, and professional polishing services. Transform your vehicle today.">
-  <meta name="keywords" content="car detailing, car wash, bike detailing, ceramic coating, glass coating, car polish, ceramic polish, car accessories, foam wash, auto detailing, Ozon Detailing, car ceramic coating, premium car wash, paint protection film, headlight restoration, underbody coating, custom painting, graphene coating, borophene coating, window tinting">
+  <meta name="description" content="Ozon Detailing offers premium car and bike detailing, ceramic coating, underbody coating, painting, accessories, and interior cleaning services. Discover perfection for your vehicle.">
+  <meta name="keywords" content="car detailing, car wash, bike detailing, ceramic coating, car accessories, foam wash, auto detailing, Ozon Detailing, car ceramic coating, premium car wash, paint protection film, headlight restoration, underbody coating, custom painting, graphene coating, borophane coating, window tinting, car tinting, tyre dressing, normal wash, full wash, premium wash">
   <meta name="author" content="Ozon Detailing">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#007bff">
-  <link rel="canonical" href="https://www.ozondetailing.com/">
+  <link rel="canonical" href="https://www.your-ozon-website.com/">
 
-  <!-- Favicon -->
-  <link rel="icon" href="images/ICON.png" type="image/png" sizes="32x32">
-  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <!-- FAVICON SECTION -->
+  <link rel="icon" href="images/ICON.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-  <!-- Open Graph & Twitter Card -->
+  <!-- Open Graph & Twitter Card Tags -->
   <meta property="og:title" content="Ozon Detailing & Car Wash - Premium Auto Care">
-  <meta property="og:description" content="Transform your vehicle with expert detailing, ceramic coatings, and premium wash services.">
+  <meta property="og:description" content="Transform your vehicle with our expert detailing services and quality accessories.">
   <meta property="og:image" content="images/og-image.jpg">
-  <meta property="og:url" content="https://www.ozondetailing.com/">
+  <meta property="og:url" content="https://www.your-ozon-website.com/">
   <meta property="og:site_name" content="Ozon Detailing & Car Wash">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image:alt" content="Ozon Detailing & Car Wash Services">
 
-  <!-- Preload Critical Resources -->
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" as="style">
-  <link rel="preload" href="images/ICON.png" as="image">
-
-  <!-- Font Awesome (Async) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
-
-  <!-- Google Fonts -->
+  <!-- STYLES & FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-  <!-- Inline CSS -->
   <style>
     :root {
       --primary-color: #007bff;
@@ -53,53 +45,68 @@
       --heading-font: 'Poppins', sans-serif;
     }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: 'Poppins', sans-serif;
       color: var(--text-color);
       line-height: 1.8;
+      margin: 0;
       background-color: var(--background-white);
-      font-size: 1.0625rem;
+      font-size: 17px;
     }
+
     h1, h2, h3, h4, h5, h6 {
       font-family: var(--heading-font);
       font-weight: 600;
       color: var(--heading-color);
+      margin-top: 0;
     }
+
     .container {
       max-width: 1280px;
       margin: 0 auto;
-      padding: 0 1.5rem;
+      padding: 0 25px; 
     }
+
     .section {
-      padding: 5rem 0;
+      padding: 120px 0;
     }
+
     .section-title {
       text-align: center;
-      margin-bottom: 3rem;
+      margin-bottom: 60px;
     }
+
     .section-title h2 {
-      font-size: clamp(2rem, 5vw, 2.8rem);
+      font-size: 3rem;
       font-weight: 700;
+      margin-bottom: 15px;
       position: relative;
-      padding-bottom: 0.5rem;
+      display: inline-block;
+      padding-bottom: 10px;
     }
+
     .section-title h2::after {
       content: '';
       position: absolute;
-      width: 50px;
-      height: 3px;
+      display: block;
+      width: 60px;
+      height: 4px;
       background: var(--primary-color);
       bottom: 0;
       left: 50%;
       transform: translateX(-50%);
+      border-radius: 2px;
     }
+
     .btn {
       display: inline-block;
-      padding: 0.75rem 1.875rem;
+      padding: 14px 35px;
       background-color: var(--primary-color);
-      color: #fff;
+      color: white;
       text-decoration: none;
       border-radius: 50px;
       font-weight: 600;
@@ -107,382 +114,634 @@
       border: none;
       cursor: pointer;
     }
+
     .btn:hover {
       background-color: #0056b3;
       transform: translateY(-3px);
     }
+    
+    .fade-in-section {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
 
-    /* Navbar */
+    .fade-in-section.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
     .navbar {
       position: sticky;
       top: 0;
       z-index: 1000;
-      padding: 0.75rem 0;
+      padding: 15px 0;
       background-color: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(8px);
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+      transition: padding 0.3s ease;
     }
+    
     .navbar .container {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
+
     .navbar-brand {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       font-weight: 700;
       color: var(--primary-color);
       text-decoration: none;
       display: flex;
       align-items: center;
-      gap: 0.625rem;
+      gap: 12px;
     }
+
     .logo-img {
-      height: 35px;
+      height: 40px;
       width: auto;
     }
+
+    .navbar-brand .short-name {
+      display: none;
+    }
+
     .nav-menu {
       display: flex;
       align-items: center;
-      gap: 1.5rem;
+      gap: 30px;
     }
+
     .nav-links {
       list-style: none;
+      margin: 0;
+      padding: 0;
       display: flex;
-      gap: 1.875rem;
     }
+
+    .nav-links li {
+      margin-left: 35px;
+    }
+
     .nav-links a {
       text-decoration: none;
       color: var(--secondary-color);
       font-weight: 500;
       position: relative;
+      padding-bottom: 5px;
       transition: color 0.3s ease;
     }
-    .nav-links a:hover, .nav-links a.active {
+
+    .nav-links a:hover,
+    .nav-links a.active {
       color: var(--primary-color);
     }
+
     .nav-links a::after {
       content: '';
       position: absolute;
       width: 0;
       height: 2px;
-      bottom: -4px;
+      bottom: 0;
       left: 0;
       background-color: var(--primary-color);
       transition: width 0.3s ease;
     }
-    .nav-links a:hover::after, .nav-links a.active::after {
+
+    .nav-links a:hover::after,
+    .nav-links a.active::after {
       width: 100%;
     }
-    .nav-toggle {
-      display: none;
-      font-size: 1.4rem;
-      color: var(--primary-color);
-      background: none;
-      border: none;
-      cursor: pointer;
+
+    .nav-social {
+      display: flex;
+      align-items: center;
     }
 
-    /* Home Section */
+    .nav-social a {
+      color: var(--secondary-color);
+      font-size: 1.2rem;
+      margin-left: 15px;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .nav-social a:hover {
+      color: var(--primary-color);
+      transform: scale(1.2);
+    }
+    
+    .nav-toggle {
+      display: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: var(--primary-color);
+      border: none;
+      background: none;
+    }
+    
     #home {
-      min-height: 80vh;
+      min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
-      background: linear-gradient(135deg, #eef7ff 0%, #ffffff 100%);
+      background: radial-gradient(circle, #eef7ff 0%, #ffffff 70%);
+      overflow: hidden;
+      padding-top: 0;
     }
+
     .home-content h1 {
-      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-size: clamp(2.8rem, 6vw, 5.5rem); 
       font-weight: 700;
+      color: var(--heading-color);
       margin-bottom: 0.5em;
     }
+
     .home-content p {
-      font-size: 1.125rem;
-      max-width: 600px;
-      margin: 0 auto 1.5rem;
+      font-size: 1.3rem;
+      margin-bottom: 30px;
+      max-width: 650px;
+      margin-left: auto;
+      margin-right: auto;
     }
+    
     .hero-animation {
       position: relative;
-      width: 250px;
-      height: 150px;
-      margin: 0 auto 2rem;
+      width: 300px;
+      height: 200px;
+      margin: 0 auto 40px auto;
     }
     .shop {
-      width: 180px;
-      height: 120px;
+      width: 200px;
+      height: 150px;
       background: #e9ecef;
       position: absolute;
       bottom: 0;
       left: 50%;
       transform: translateX(-50%);
-      border-radius: 8px;
-      border: 1px solid var(--border-color);
-      overflow: hidden;
+      border-radius: 10px;
+      border: 2px solid var(--border-color);
     }
     .garage-door {
-      width: 100px;
-      height: 80px;
+      width: 120px;
+      height: 100px;
       background: #adb5bd;
       position: absolute;
       bottom: 0;
       left: 40px;
-      transition: transform 1.5s ease-in-out;
+      animation: openDoor 2s ease-in-out 1.5s forwards;
     }
     .car {
-      width: 80px;
-      height: 30px;
-      background: var(--primary-color);
-      border-radius: 8px 8px 0 0;
-      position: absolute;
-      bottom: 10px;
-      left: -100px;
-      transition: transform 2s ease-in-out;
-    }
-    .hero-animation:hover .car {
-      transform: translateX(140px);
-    }
-    .hero-animation:hover .garage-door {
-      transform: translateY(-80px);
-    }
-
-    /* About Section */
-    .about-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-      align-items: center;
-    }
-    .car-animation-container {
-      position: relative;
-      height: 200px;
-    }
-    .road-and-car {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-    }
-    .road {
-      height: 10px;
-      background: repeating-linear-gradient(90deg, #fff 0, #fff 10px, transparent 10px, transparent 20px);
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-    }
-    .animated-car-body {
-      width: 120px;
+      width: 100px;
       height: 40px;
       background: var(--primary-color);
       border-radius: 10px 10px 0 0;
+      position: absolute;
+      bottom: 10px;
+      left: -120px;
+      animation: driveIn 4s ease-in-out 0.5s forwards;
+    }
+    @keyframes driveIn {
+      40% { transform: translateX(160px); }
+      100% { transform: translateX(160px); }
+    }
+    @keyframes openDoor {
+      100% { transform: translateY(-100px); }
+    }
+    
+    .about-container {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      align-items: center;
+      gap: 60px;
+    }
+
+    .about-content h3 {
+      font-size: 2.4rem;
+      margin-bottom: 20px;
+      color: var(--primary-color);
+    }
+    .about-content p {
+        margin-bottom: 1.5rem;
+    }
+
+    .car-animation-container {
       position: relative;
-      animation: moveCar 3s linear infinite;
-    }
-    .animated-car-top {
-      width: 80px;
-      height: 20px;
-      background: var(--primary-color);
-      position: absolute;
-      top: -15px;
-      left: 20px;
-      border-radius: 5px;
-    }
-    .wheel {
-      width: 20px;
-      height: 20px;
-      background: #333;
-      border-radius: 50%;
-      position: absolute;
-      bottom: -10px;
-      animation: spinWheel 0.5s linear infinite;
-    }
-    .front-wheel { left: 20px; }
-    .back-wheel { left: 80px; }
-
-    /* Services Section */
-    .services-controls {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    .services-filter {
-      padding: 0.5rem;
-      font-size: 1rem;
-      border-radius: 5px;
-      border: 1px solid var(--border-color);
-      background: var(--background-white);
-    }
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-      margin-bottom: 3rem;
-    }
-    .service-card {
-      background: var(--background-white);
-      padding: 1.5rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      text-align: center;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .service-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-    }
-    .service-icon {
-      font-size: 2rem;
-      color: var(--primary-color);
-      margin-bottom: 1rem;
-    }
-    .service-card h4 {
-      font-size: 1.25rem;
-      margin-bottom: 0.5rem;
-    }
-    .service-card p {
-      font-size: 0.875rem;
-    }
-
-    /* Instagram CTA */
-    .instagram-cta {
-      text-align: center;
-      padding: 2rem;
-      background: var(--background-light);
-      border-radius: 10px;
-    }
-    .instagram-cta i {
-      font-size: 2rem;
-      color: var(--primary-color);
-      margin-bottom: 1rem;
-    }
-
-    /* Forms */
-    .contact-wrapper {
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    .contact-form {
-      display: grid;
-      gap: 1rem;
-    }
-    .form-group {
-      display: flex;
-      flex-direction: column;
-    }
-    .form-group input, .form-group textarea, .form-group select {
-      padding: 0.75rem;
-      border: 1px solid var(--border-color);
-      border-radius: 5px;
-      font-size: 1rem;
-    }
-    .form-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1rem;
-    }
-
-    /* Map */
-    .map-container {
-      margin-top: 2rem;
-      border-radius: 10px;
+      min-height: 350px;
+      width: 100%;
       overflow: hidden;
-    }
-
-    /* Footer */
-    .footer-content {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-      margin-bottom: 1rem;
-      border-bottom: 1px solid var(--border-color);
-      padding-bottom: 1.5rem;
-    }
-    .footer-info h3, .footer-social h3 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-    }
-    .footer-copy {
-      text-align: center;
-      font-size: 0.875rem;
-      color: #888;
-      padding-top: 1rem;
-      border-top: 1px solid var(--border-color);
-    }
-    .footer-social a {
-      font-size: 1.5rem;
-      margin: 0 0.75rem;
-      color: var(--text-color);
-      position: relative;
-      transition: color 0.3s ease, transform 0.3s ease;
-    }
-    .footer-social a:hover {
-      color: var(--primary-color);
-      transform: scale(1.2);
-    }
-    .footer-social a::after {
-      content: attr(aria-label);
-      position: absolute;
-      bottom: -2rem;
-      left: 50%;
-      transform: translateX(-50%);
-      background: var(--secondary-color);
-      color: #fff;
-      padding: 0.25rem 0.5rem;
-      border-radius: 4px;
-      font-size: 0.75rem;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-      pointer-events: none;
-    }
-    .footer-social a:hover::after {
-      opacity: 1;
-    }
-
-    /* WhatsApp Floating Button */
-    .whatsapp-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 1000;
-    }
-    .whatsapp-float a {
       display: flex;
       align-items: center;
       justify-content: center;
+      border-radius: 10px;
+      background-color: var(--background-light);
+      border: 1px solid var(--border-color);
+    }
+    .road-and-car {
+      position: relative;
+      width: 100%;
+      height: 100px;
+    }
+    .road {
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: #ccc;
+    }
+    .animated-car-body {
+      position: absolute;
+      bottom: 22px;
+      left: -150px;
+      width: 120px;
+      height: 40px;
+      background-color: var(--primary-color);
+      border-radius: 10px 10px 0 0;
+      animation: drive-across 7s linear infinite 1s;
+    }
+    .animated-car-top {
+      position: absolute;
+      top: -20px;
+      left: 20px;
+      width: 70px;
+      height: 30px;
+      background-color: var(--primary-color);
+      border-radius: 10px 10px 0 0;
+    }
+    .wheel {
+      position: absolute;
+      bottom: -10px;
+      width: 25px;
+      height: 25px;
+      background-color: #333;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      animation: spin-wheels 0.7s linear infinite 1s;
+    }
+    .front-wheel { right: 10px; }
+    .back-wheel { left: 10px; }
+
+    @keyframes drive-across {
+      0% { left: -150px; }
+      100% { left: 110%; }
+    }
+    @keyframes spin-wheels {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    
+    #services {
+      background-color: var(--background-light);
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 35px;
+    }
+    .service-card {
+      background: var(--background-white);
+      padding: 35px;
+      text-align: center;
+      border-radius: 10px;
+      border: 1px solid var(--border-color);
+      transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      min-height: 280px;
+    }
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      border-color: var(--primary-color);
+      background-color: #f0f7ff;
+    }
+    .service-icon {
+      font-size: 2.8rem;
+      color: var(--primary-color);
+      margin-bottom: 20px;
+    }
+    .service-card h4 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+      color: var(--heading-color);
+    }
+    .service-card p {
+      font-size: 1rem;
+      line-height: 1.7;
+      flex-grow: 1;
+    }
+    .service-icon i {
+      transition: transform 0.3s ease-in-out;
+    }
+    .service-card:hover .service-icon i {
+      animation: beat 0.6s ease-in-out infinite;
+    }
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+
+    #our-work {
+      background-color: var(--background-white);
+    }
+    .instagram-cta {
+      background: linear-gradient(135deg, #405DE6, #833AB4, #E1306C, #FCAF45);
+      padding: 80px 40px;
+      border-radius: 15px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    }
+    .instagram-cta i {
+      font-size: 4.5rem;
+      margin-bottom: 20px;
+      transition: transform 0.4s ease;
+    }
+    .instagram-cta:hover i {
+      transform: scale(1.1);
+    }
+    .instagram-cta h3 {
+      color: white;
+      font-size: 2.8rem;
+    }
+    .instagram-cta p {
+      font-size: 1.2rem;
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 30px;
+    }
+    .instagram-cta .btn {
+      background-color: white;
+      color: var(--secondary-color);
+      font-weight: 700;
+    }
+    
+    #contact, #booking {
+      background-color: var(--background-light);
+    }
+    #booking {
+      background-color: var(--background-white);
+    }
+    .contact-wrapper {
+      max-width: 700px;
+      margin: 0 auto;
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      border: 1px solid var(--border-color);
+    }
+    .contact-form .form-group {
+      margin-bottom: 20px;
+    }
+    .contact-form input, .contact-form textarea, .contact-form select {
+      width: 100%;
+      padding: 14px;
+      border: 1px solid var(--border-color);
+      border-radius: 5px;
+      font-family: 'Poppins', sans-serif;
+      box-sizing: border-box;
+      color: var(--text-color);
+      font-size: 1rem;
+    }
+    .contact-form select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23007bff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E") no-repeat right 15px center;
+      background-size: 16px;
+    }
+    .contact-form select:required:invalid {
+      color: var(--text-color);
+    }
+    .contact-form option[value=""][disabled] {
+      display: none;
+    }
+    .contact-form .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .contact-form button {
+      width: 100%;
+      padding: 15px;
+      border-radius: 5px;
+      background-color: var(--whatsapp-color);
+      color: white;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+    .map-container {
+      margin-top: 60px;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+      height: 450px;
+    }
+    .map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    
+    footer {
+      background: var(--secondary-color);
+      color: rgba(255, 255, 255, 0.7);
+      padding: 60px 0 30px 0;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 40px;
+      text-align: left;
+      margin-bottom: 40px;
+    }
+    .footer-col h4 {
+      color: white;
+      margin-bottom: 20px;
+      font-size: 1.2rem;
+    }
+    .footer-col p, .footer-col a, .footer-col li {
+      color: rgba(255, 255, 255, 0.7);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .footer-col ul {
+      list-style: none;
+      padding: 0;
+    }
+    .footer-col li {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: flex-start;
+    }
+    .footer-col a:hover {
+      color: var(--primary-color);
+    }
+    .footer-col i {
+      margin-right: 10px;
+      width: 20px;
+      text-align: center;
+      color: var(--primary-color);
+      margin-top: 5px;
+    }
+    .footer-social {
+      margin-top: 20px;
+    }
+    .footer-social a {
+      font-size: 1.5rem;
+      margin-right: 15px;
+    }
+    .footer-bottom {
+      text-align: center;
+      padding-top: 30px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 0.9rem;
+    }
+    
+    .scroll-to-top {
+      position: fixed;
+      width: 50px;
+      height: 50px;
+      bottom: 30px;
+      left: 30px;
+      background-color: var(--primary-color);
+      color: #FFF;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 24px;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.4s, visibility 0.4s, transform 0.3s ease;
+    }
+    .scroll-to-top:hover {
+      background-color: #0056b3;
+      transform: translateY(-3px);
+    }
+    .scroll-to-top.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .chat-launcher {
+      position: fixed;
       width: 60px;
       height: 60px;
-      background-color: var(--whatsapp-color);
-      color: #fff;
-      border-radius: 50%;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      bottom: 30px;
+      right: 30px;
+      background-color: var(--primary-color);
+      color: white;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+      z-index: 101;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: transform 0.3s ease;
     }
-    .whatsapp-float a:hover {
+    .chat-launcher:hover {
       transform: scale(1.1);
-      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
     }
-    .whatsapp-float i {
-      font-size: 1.8rem;
-    }
-
-    /* Animations */
-    @keyframes moveCar {
-      0% { transform: translateX(-100%); }
-      100% { transform: translateX(100%); }
-    }
-    @keyframes spinWheel {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-    .fade-in-section {
+    .chat-widget {
+      position: fixed;
+      bottom: 100px;
+      right: 30px;
+      width: 350px;
+      max-width: calc(100% - 40px);
+      background-color: var(--background-white);
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      z-index: 100;
+      overflow: hidden;
       opacity: 0;
+      visibility: hidden;
       transform: translateY(20px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
+      transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
     }
-    .fade-in-section.visible {
+    .chat-widget.show {
       opacity: 1;
+      visibility: visible;
       transform: translateY(0);
     }
+    .chat-widget-header {
+      background: var(--primary-color);
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .chat-widget-header h4 {
+      color: white;
+      margin: 0;
+      font-size: 1.1rem;
+    }
+    .chat-widget-header .close-btn {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+      line-height: 1;
+    }
+    .chat-widget-body {
+      padding: 25px 20px;
+      text-align: center;
+    }
+    .chat-widget-body .icon {
+      font-size: 3rem;
+      color: var(--primary-color);
+      margin-bottom: 15px;
+    }
+    .chat-widget-body h5 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+    .chat-widget-body p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 25px;
+      color: var(--text-color);
+    }
+    .chat-widget-body .btn-chat {
+      background-color: var(--whatsapp-color);
+      display: block;
+      width: 100%;
+      text-decoration: none;
+      padding: 12px;
+    }
 
-    /* Responsive Design */
+    @media (max-width: 992px) {
+      body {
+        font-size: 16px;
+      }
+      .section {
+        padding: 80px 0;
+      }
+      .about-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+      }
+      .car-animation-container {
+        margin: 0 auto;
+      }
+    }
+
     @media (max-width: 768px) {
+      .container {
+        padding: 0 15px;
+      }
       .nav-menu {
         display: none;
         flex-direction: column;
@@ -491,52 +750,69 @@
         position: absolute;
         top: 100%;
         left: 0;
-        padding: 1rem 0;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        padding: 20px 0;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        align-items: center;
       }
-      .nav-menu.active { display: flex; }
-      .nav-links { flex-direction: column; align-items: center; }
-      .nav-links li { margin: 0.5rem 0; }
+      .nav-menu.active {
+        display: flex;
+      }
+      .nav-links {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+      }
+      .nav-links li {
+        margin: 10px 0;
+      }
       .nav-social {
-        margin-top: 1rem;
-        padding-top: 1rem;
+        margin-top: 20px;
+        padding-top: 20px;
         border-top: 1px solid var(--border-color);
       }
-      .nav-toggle { display: block; }
-      .about-container {
-        grid-template-columns: 1fr;
+      .nav-social a {
+        margin: 0 10px;
       }
-      .footer-content {
-        grid-template-columns: 1fr;
-        text-align: center;
+      .nav-toggle {
+        display: block;
       }
-      .form-grid {
+      .contact-form .form-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+      .footer-grid {
         grid-template-columns: 1fr;
       }
     }
     @media (max-width: 480px) {
-      .navbar-brand .full-name { display: none; }
-      .navbar-brand .short-name { display: inline; }
-      .home-content h1 { font-size: clamp(2rem, 5vw, 3rem); }
-      .whatsapp-float a { width: 50px; height: 50px; }
-      .whatsapp-float i { font-size: 1.5rem; }
+      .navbar-brand .full-name {
+        display: none;
+      }
+      .navbar-brand .short-name {
+        display: inline;
+      }
+      .navbar-brand {
+        font-size: 1.5rem;
+      }
+      .section-title h2 {
+          font-size: 2.2rem;
+      }
     }
   </style>
-
-  <!-- Structured Data -->
+  
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "AutoWash",
     "name": "Ozon Detailing & Car Wash",
     "image": "images/og-image.jpg",
-    "@id": "https://www.ozondetailing.com/",
-    "url": "https://www.ozondetailing.com/",
+    "@id": "https://www.your-ozon-website.com/",
+    "url": "https://www.your-ozon-website.com/",
     "telephone": "+91-9447405746",
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Kolathakkara, Manipuram",
+      "streetAddress": "Kolathakkara, manipuram",
       "addressLocality": "Omassery",
       "postalCode": "673582",
       "addressCountry": "IN"
@@ -548,7 +824,15 @@
     },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
       "opens": "08:00",
       "closes": "21:00"
     }
@@ -556,13 +840,14 @@
   </script>
 </head>
 <body>
+
   <!-- Navbar -->
   <nav class="navbar" id="main-nav">
     <div class="container">
       <a href="#home" class="navbar-brand">
-        <img src="images/ICON.png" alt="Ozon Detailing Logo" class="logo-img" width="35" height="35" loading="lazy">
-        <span class="full-name">OZON Detailing</span>
-        <span class="short-name">OZON</span>
+          <img src="images/ICON.png" alt="Ozon Detailing Logo" class="logo-img">
+          <span class="full-name">OZON Detailing</span>
+          <span class="short-name">OZON</span>
       </a>
       <div class="nav-menu" id="nav-menu">
         <ul class="nav-links" id="nav-links">
@@ -575,11 +860,11 @@
           <li><a href="#footer-contact">Contact</a></li>
         </ul>
         <div class="nav-social">
-          <a href="https://www.instagram.com/ozon_detailing_" aria-label="Visit our Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-          <a href="https://wa.me/919447405746" target="_blank" aria-label="Contact us on WhatsApp" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/ozon_detailing_/" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/919447405746" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
         </div>
       </div>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu"><i class="fas fa-bars"></i></button>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
     </div>
   </nav>
 
@@ -588,12 +873,12 @@
     <div class="container">
       <div class="home-content">
         <div class="hero-animation">
-          <div class="shop"><div class="garage-door"></div></div>
-          <div class="car"></div>
+            <div class="shop"><div class="garage-door"></div></div>
+            <div class="car"></div>
         </div>
         <h1>Welcome to Ozon Detailing & Car Wash</h1>
-        <p>The ultimate destination for vehicle care. We restore your car to its showroom glory.</p>
-        <a href="#booking" class="btn" aria-label="Book an appointment">Book Now</a>
+        <p>The ultimate destination for vehicle care. We bring your car back to its showroom glory.</p>
+        <a href="#booking" class="btn">Book an Appointment</a>
       </div>
     </div>
   </section>
@@ -601,20 +886,20 @@
   <!-- About Section -->
   <section id="about" class="section fade-in-section">
     <div class="container about-container">
-      <div class="car-animation-container">
-        <div class="road-and-car">
-          <div class="road"></div>
-          <div class="animated-car-body">
-            <div class="animated-car-top"></div>
-            <div class="wheel front-wheel"></div>
-            <div class="wheel back-wheel"></div>
+       <div class="car-animation-container">
+          <div class="road-and-car">
+              <div class="road"></div>
+              <div class="animated-car-body">
+                  <div class="animated-car-top"></div>
+                  <div class="wheel front-wheel"></div>
+                  <div class="wheel back-wheel"></div>
+              </div>
           </div>
-        </div>
-      </div>
-      <div class="about-content">
-        <h3>About Ozon Detailing</h3>
-        <p><strong>Where passion meets precision.</strong> At Ozon Detailing, we transform vehicles with expert care, using industry-leading products and techniques.</p>
-        <p>From meticulous hand washes to advanced ceramic coatings, our skilled technicians ensure every vehicle shines like new. Trust us to protect and enhance your ride.</p>
+       </div>
+       <div class="about-content">
+        <h3>About Ozon Detailing & Car Wash</h3>
+        <p><strong>Welcome to Ozon Detailing and Car Wash, where passion for cars meets precision and care.</strong> Founded on the principle that every vehicle deserves to look its absolute best, we have become a trusted name for discerning car and bike owners.</p>
+        <p>Our mission is simple: to provide an unparalleled detailing experience that restores, protects, and enhances your vehicle's appearance. We use only industry-leading products and the latest techniques, from meticulous hand washes to advanced ceramic coatings. Our skilled technicians treat every vehicle as their own, ensuring a flawless finish and complete customer satisfaction every time.</p>
       </div>
     </div>
   </section>
@@ -623,39 +908,124 @@
   <section id="services" class="section fade-in-section">
     <div class="container">
       <div class="section-title"><h2>Our Services</h2></div>
-      <div class="services-controls">
-        <select class="services-filter" id="services-filter" aria-label="Filter services by category">
-          <option value="all">All Categories</option>
-          <option value="coating-protection">Coating & Protection</option>
-          <option value="wash-packages">Wash Packages</option>
-          <option value="detailing-customization">Detailing & Customization</option>
-        </select>
-      </div>
+      <div class="services-grid">
+        <!-- WASH SERVICES -->
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-soap"></i></div>
+          <h4>Body Wash</h4>
+          <p>Thorough exterior cleaning for a spotless shine.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-shower"></i></div>
+          <h4>Normal Wash</h4>
+          <p>Standard wash for everyday cleaning needs.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-shower"></i></div>
+          <h4>Full Wash</h4>
+          <p>Comprehensive cleaning for both exterior and interior.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-shower"></i></div>
+          <h4>Premium Wash</h4>
+          <p>Luxury wash with premium products for a superior shine.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+          <h4>Nil Under Body Wash</h4>
+          <p>Deep cleaning of the vehicle's underbody to prevent corrosion.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+          <h4>Ceramic Wash</h4>
+          <p>Specialized wash with ceramic protection for lasting shine.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-tools"></i></div>
+          <h4>Engine Steam Wash</h4>
+          <p>Steam cleaning for a spotless engine bay.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-trash"></i></div>
+          <h4>Tar Remover</h4>
+          <p>Removes tar and stubborn residues from vehicle surfaces.</p>
+        </div>
 
-      <h3 class="service-category-title" data-category="coating-protection">Coating & Protection</h3>
-      <div class="services-grid" data-category="coating-protection">
-        <div class="service-card"><div class="service-icon"><i class="fas fa-atom"></i></div><h4>Graphene Ceramic Coating</h4><p>Unmatched durability and water resistance for long-lasting shine.</p></div>
-        <div class="service-card"><div class="service-icon"><i class="fas fa-gem"></i></div><h4>Borophene Ceramic Coating</h4><p>Thicker coating for superior gloss and chemical resistance.</p></div>
-        <div class="service-card"><div class="service-icon"><i class="fas fa-shield-alt"></i></div><h4>Ceramic Coating</h4><p>High-gloss protection against UV rays and scratches.</p></div>
-        <div class="service-card"><div class="service-icon"><i class="fas fa-film"></i></div><h4>Paint Protection Film (PPF)</h4><p>Self-healing film to guard against chips and scratches.</p></div>
-        <div class="service-card"><div class="service-icon"><i class="fas fa-spray-can"></i></div><h4>Underbody Coating</h4><p>Protects chassis from rust and road debris.</p></div>
-        <div class="service-card"><div class="service-icon"><i class="fas fa-tint"></i></div><h4>Glass Coating</h4><p>Hydrophobic coating for better visibility and easy cleaning.</p></div>
-      </div>
+        <!-- CERAMIC COATING SERVICES -->
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+          <h4>Ceramic Coating</h4>
+          <p>High-gloss, hydrophobic shield against UV rays and scratches.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+          <h4>Ceramic Coating with Glass</h4>
+          <p>Durable coating with glass protection for enhanced clarity.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-atom"></i></div>
+          <h4>Graphene Coating with Glass, Alloy, Wheel, Tyre</h4>
+          <p>Unmatched durability with protection for glass, alloy, wheels, and tyres.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-gem"></i></div>
+          <h4>Borophane Coating with Glass, Alloy, Wheel, Tyre</h4>
+          <p>Superior chemical resistance and gloss with comprehensive protection.</p>
+        </div>
 
-      <h3 class="service-category-title" data-category="wash-packages">Wash Packages</h3>
-      <div class="services-grid" data-category="wash-packages">
-        <div class="service-card"><div class="service-icon"><i class="fas fa-shower"></i></div><h4>Premium Car Wash</h4><p>Hand wash with pH-neutral shampoos for a spotless finish.</p></div>
-        <div class="service-card"><div class="service-icon"><i class="fas fa-bath"></i></div><h4>Full Wash</h4><p>Complete exterior and interior cleaning package.</p></div>
-        <div class="service-card"><div class="service-icon"><i class="fas fa-soap"></i></div><h4>Foam Wash</h4><p>Gentle foam wash to lift dirt without harming paint.</p></div>
-        <div class="service-card"><div class="service-icon"><i class="fas fa-water"></i></div><h4>Body Wash</h4><p>Thorough exterior wash for daily cleanliness.</p></div>
-      </div>
+        <!-- BIKE CERAMIC SEGMENT -->
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-motorcycle"></i></div>
+          <h4>Normal Polish (Bike)</h4>
+          <p>Basic polishing to restore shine for bikes.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-motorcycle"></i></div>
+          <h4>Graphene Coating (Bike)</h4>
+          <p>Advanced graphene coating for bikes, offering long-term protection.</p>
+        </div>
 
-      <h3 class="service-category-title" data-category="detailing-customization">Detailing & Customization</h3>
-      <div class="services-grid" data-category="detailing-customization">
-        <div class="service-card"><div class="service-icon"><i class="fas fa-award"></i></div><h4>Premium Polish</h4><p>Multi-stage polish for a mirror-like shine.</p></div>
-        <div class="service-card"><div class="service-icon"><i class="fas fa-brush"></i></div><h4>Normal Polish</h4><p>Single-stage polish to enhance gloss.</p></div>
-        <div class="service-card"><div class="service-icon"><i class="fas fa-couch"></i></div><h4>Interior Cleaning</h4><p>Deep cleaning for a fresh, spotless cabin.</p></div>
-        <div class="service-card"><div class="service-icon"><i class="fas fa-lightbulb"></i></div><h4>Headlight Restoration</h4><p>Restores clarity to foggy headlights.</p></div>
+        <!-- OTHER SERVICES -->
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-car-side"></i></div>
+          <h4>Car/Bike Detailing</h4>
+          <p>Comprehensive detailing with paint correction and polishing.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-soap"></i></div>
+          <h4>Foam Wash</h4>
+          <p>Gentle foam cannon wash for a spotless exterior.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-couch"></i></div>
+          <h4>Interior Cleaning</h4>
+          <p>Deep cleaning of all interior surfaces for a fresh cabin.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-spray-can"></i></div>
+          <h4>Underbody Coating</h4>
+          <p>Durable undercoating to protect against rust and debris.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-paint-roller"></i></div>
+          <h4>Custom Painting</h4>
+          <p>Expert painting for custom vehicle accents.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-film"></i></div>
+          <h4>Paint Protection Film (PPF)</h4>
+          <p>Self-healing film to protect against scratches and chips.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-lightbulb"></i></div>
+          <h4>Headlight Restoration</h4>
+          <p>Restores clarity to foggy or yellowed headlights.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-window-maximize"></i></div>
+          <h4>Window Tinting</h4>
+          <p>Professional tinting to reduce heat and glare.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -665,9 +1035,9 @@
     <div class="container">
       <div class="instagram-cta">
         <i class="fab fa-instagram"></i>
-        <h3>Our Work on Instagram</h3>
-        <p>Explore our latest vehicle transformations on Instagram.</p>
-        <a href="https://www.instagram.com/ozon_detailing_" target="_blank" class="btn" aria-label="Visit our Instagram" rel="noopener noreferrer">Visit Instagram</a>
+        <h3>See Our Work on Instagram</h3>
+        <p>Please visit our page to see the latest transformations and our commitment to quality.</p>
+        <a href="https://www.instagram.com/ozon_detailing_/" target="_blank" class="btn">Visit Our Instagram</a>
       </div>
     </div>
   </section>
@@ -678,143 +1048,172 @@
       <div class="section-title"><h2>Book an Appointment</h2></div>
       <div class="contact-wrapper">
         <form class="contact-form" id="booking-form">
-          <div class="form-group"><input type="text" id="booking-name" placeholder="Your Name" required aria-label="Your name"></div>
-          <div class="form-group"><input type="tel" id="booking-phone" placeholder="Your Phone Number" required aria-label="Your phone number"></div>
+          <div class="form-group"><input type="text" id="booking-name" placeholder="Your Name" required></div>
+          <div class="form-group"><input type="tel" id="booking-phone" placeholder="Your Phone Number" required></div>
           <div class="form-grid">
-            <div class="form-group"><input type="date" id="booking-date" required aria-label="Preferred date"></div>
-            <div class="form-group"><input type="time" id="booking-time" required aria-label="Preferred time"></div>
+            <div class="form-group"><input type="date" id="booking-date" required></div>
+            <div class="form-group"><input type="time" id="booking-time" required></div>
           </div>
           <div class="form-group">
-            <select id="booking-service" required aria-label="Select a service">
+            <select id="booking-service" required>
               <option value="" disabled selected>Select a Service</option>
-              <option value="Graphene Ceramic Coating">Graphene Ceramic Coating</option>
-              <option value="Borophene Ceramic Coating">Borophene Ceramic Coating</option>
-              <option value="Ceramic Coating">Ceramic Coating</option>
-              <option value="Paint Protection Film (PPF)">Paint Protection Film (PPF)</option>
-              <option value="Underbody Coating">Underbody Coating</option>
-              <option value="Glass Coating">Glass Coating</option>
-              <option value="Premium Car Wash">Premium Car Wash</option>
-              <option value="Full Wash">Full Wash</option>
-              <option value="Foam Wash">Foam Wash</option>
               <option value="Body Wash">Body Wash</option>
-              <option value="Premium Polish">Premium Polish</option>
-              <option value="Normal Polish">Normal Polish</option>
+              <option value="Normal Wash">Normal Wash</option>
+              <option value="Full Wash">Full Wash</option>
+              <option value="Premium Wash">Premium Wash</option>
+              <option value="Nil Under Body Wash">Nil Under Body Wash</option>
+              <option value="Ceramic Wash">Ceramic Wash</option>
+              <option value="Engine Steam Wash">Engine Steam Wash</option>
+              <option value="Tar Remover">Tar Remover</option>
+              <option value="Ceramic Coating">Ceramic Coating</option>
+              <option value="Ceramic Coating with Glass">Ceramic Coating with Glass</option>
+              <option value="Graphene Coating with Glass, Alloy, Wheel, Tyre">Graphene Coating with Glass, Alloy, Wheel, Tyre</option>
+              <option value="Borophane Coating with Glass, Alloy, Wheel, Tyre">Borophane Coating with Glass, Alloy, Wheel, Tyre</option>
+              <option value="Normal Polish (Bike)">Normal Polish (Bike)</option>
+              <option value="Graphene Coating (Bike)">Graphene Coating (Bike)</option>
+              <option value="Car/Bike Detailing">Car/Bike Detailing</option>
+              <option value="Foam Wash">Foam Wash</option>
               <option value="Interior Cleaning">Interior Cleaning</option>
+              <option value="Underbody Coating">Underbody Coating</option>
+              <option value="Custom Painting">Custom Painting</option>
+              <option value="Paint Protection Film (PPF)">Paint Protection Film (PPF)</option>
               <option value="Headlight Restoration">Headlight Restoration</option>
+              <option value="Window Tinting">Window Tinting</option>
               <option value="Other">Other (Please specify below)</option>
             </select>
           </div>
-          <div class="form-group"><textarea id="booking-message" rows="3" placeholder="Additional details or specific vehicle info..." aria-label="Additional details"></textarea></div>
-          <button type="submit" class="btn" aria-label="Request appointment via WhatsApp"><i class="fab fa-whatsapp"></i> Request Appointment</button>
+          <div class="form-group"><textarea id="booking-message" rows="3" placeholder="Additional details or specific vehicle info..."></textarea></div>
+          <button type="submit" class="btn"><i class="fab fa-whatsapp"></i> Request Appointment</button>
         </form>
       </div>
     </div>
   </section>
 
-  <!-- Feedback & Location Section -->
+  <!-- Feedback Form Section -->
   <section id="contact" class="section fade-in-section">
     <div class="container">
       <div class="section-title"><h2>Feedback & Location</h2></div>
       <div class="contact-wrapper">
         <form class="contact-form" id="whatsapp-form">
-          <div class="form-group"><input type="text" id="name" placeholder="Your Name" required aria-label="Your name"></div>
-          <div class="form-group"><input type="tel" id="phone" placeholder="Your Phone Number (Optional)" aria-label="Your phone number"></div>
-          <div class="form-group"><textarea id="message" rows="5" placeholder="Your Feedback or Inquiry..." required aria-label="Your feedback or inquiry"></textarea></div>
-          <button type="submit" class="btn" aria-label="Send feedback via WhatsApp"><i class="fab fa-whatsapp"></i> Send Feedback</button>
+          <div class="form-group"><input type="text" id="name" placeholder="Your Name" required></div>
+          <div class="form-group"><input type="tel" id="phone" placeholder="Your Phone Number (Optional)"></div>
+          <div class="form-group"><textarea id="message" rows="5" placeholder="Your Inquiry or Feedback..." required></textarea></div>
+          <button type="submit" class="btn"><i class="fab fa-whatsapp"></i> Send via WhatsApp</button>
         </form>
       </div>
       <div class="map-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.201083613322!2d75.92385329999999!3d11.246613199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba645236b92966f%3A0xd6d8aee7602879fb!2sOzon%20detailing%20and%20car%20wash!5e0!3m2!1sen!2sin!4v1756116918654!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ozon Detailing Location"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.201083613322!2d75.92385329999999!3d11.246613199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba645236b92966f%3A0xd6d8aee7602879fb!2sOzon%20detailing%20and%20car%20wash!5e0!3m2!1sen!2sin!4v1756116918654!5m2!1sen!2sin" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer id="footer-contact" class="section">
+  <footer id="footer-contact">
     <div class="container">
-      <div class="footer-content">
-        <div class="footer-info">
-          <h3>Contact Us</h3>
-          <p><i class="fas fa-map-marker-alt"></i> Kolathakkara, Manipuram, Omassery, 673582, India</p>
-          <p><i class="fas fa-phone"></i> <a href="tel:+919447405746">+91-9447405746</a></p>
-          <p><i class="fas fa-clock"></i> Mon-Sun: 8:00 AM - 9:00 PM</p>
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#our-work">Our Work</a></li>
+            <li><a href="#booking">Booking</a></li>
+            <li><a href="#contact">Feedback</a></li>
+          </ul>
         </div>
-        <div class="footer-social">
-          <h3>Follow Us</h3>
-          <a href="https://www.instagram.com/ozon_detailing_" target="_blank" aria-label="Visit our Instagram" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-          <a href="https://wa.me/919447405746" target="_blank" aria-label="Contact us on WhatsApp" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+        <div class="footer-col">
+          <h4>Contact & Location</h4>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i>
+                <span>
+                    OZON DETAILING & CAR WASH<br>
+                    Kolathakkara, manipuram<br>
+                    puthoor (po), omassery 673582
+                </span>
+            </li>
+            <li><i class="fas fa-phone"></i><a href="tel:+919447405746">+91-9447405746</a></li>
+            <li><i class="fas fa-envelope"></i><a href="mailto:contact@ozondetailing.com">contact@ozondetailing.com</a></li>
+            <li><i class="fas fa-clock"></i><span>Mon - Sat: 8:00 AM - 9:00 PM<br>Sun: 8:00 AM - 5:00 PM</span></li>
+          </ul>
+           <div class="footer-social">
+            <a href="https://www.instagram.com/ozon_detailing_/" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/919447405746" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
         </div>
       </div>
-      <p class="footer-copy">&copy; 2025 Ozon Detailing & Car Wash. All rights reserved Design by suhaim soft.</p>
+      <div class="footer-bottom">
+        &copy; 2025 Ozon Detailing & Car Wash. All rights reserved. Designed By suhaim soft.
+      </div>
     </div>
   </footer>
 
-  <!-- WhatsApp Floating Button -->
-  <div class="whatsapp-float">
-    <a href="https://wa.me/919447405746" target="_blank" aria-label="Chat with us on WhatsApp" rel="noopener noreferrer">
-      <i class="fab fa-whatsapp"></i>
-    </a>
+  <!-- Floating Buttons -->
+  <a href="#home" class="scroll-to-top" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+  
+  <!-- Chat Widget -->
+  <div class="chat-launcher" id="chat-launcher">
+    <i class="fas fa-comment-dots"></i>
+  </div>
+  <div class="chat-widget" id="chat-widget">
+    <div class="chat-widget-header">
+      <h4>Chat with Us</h4>
+      <button class="close-btn" id="chat-close-btn">&times;</button>
+    </div>
+    <div class="chat-widget-body">
+      <div class="icon"><i class="fas fa-car-side"></i></div>
+      <h5>Welcome to Ozon Detailing & Car Wash!</h5>
+      <p>Have a question? We're here to help. Tap below to chat with us on WhatsApp.</p>
+      <a href="https://wa.me/919447405746?text=Hello%20Ozon%20Detailing!" class="btn btn-chat" target="_blank">
+        <i class="fab fa-whatsapp"></i> Chat Now
+      </a>
+    </div>
   </div>
 
-  <!-- Inline JavaScript -->
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      // Navbar Toggle
-      const navToggle = document.getElementById('nav-toggle');
-      const navMenu = document.getElementById('nav-menu');
-      navToggle.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-      });
-      document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', () => {
-          navMenu.classList.remove('active');
-        });
-      });
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const WHATSAPP_NUMBER = '919447405746';
 
-      // Active Nav Link on Scroll
-      const navLinks = document.querySelectorAll('.nav-links a');
-      window.addEventListener('scroll', () => {
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    navToggle.addEventListener('click', () => navMenu.classList.toggle('active'));
+    
+    document.querySelectorAll('.nav-links a[href^="#"]').forEach(link => link.addEventListener('click', () => {
+        if (window.innerWidth <= 768) {
+            navMenu.classList.remove('active');
+        }
+    }));
+    
+    const sections = document.querySelectorAll('section, footer');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    window.addEventListener('scroll', () => {
         let current = '';
-        document.querySelectorAll('section').forEach(section => {
-          const sectionTop = section.offsetTop;
-          if (scrollY >= sectionTop - 60) {
-            current = section.getAttribute('id');
-          }
+        sections.forEach(section => { 
+            const sectionTop = section.offsetTop;
+            if (pageYOffset >= sectionTop - 150) { 
+                current = section.getAttribute('id'); 
+            } 
         });
-        navLinks.forEach(link => {
-          link.classList.remove('active');
-          if (link.getAttribute('href').slice(1) === current) {
-            link.classList.add('active');
-          }
+
+        navLinks.forEach(a => { 
+            a.classList.remove('active'); 
+            if (a.getAttribute('href') === '#' + current) { 
+                a.classList.add('active'); 
+            } 
         });
-      });
+    });
 
-      // Fade-in Animation
-      const fadeInSections = document.querySelectorAll('.fade-in-section');
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-          }
+    const faders = document.querySelectorAll('.fade-in-section');
+    const appearOnScroll = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => { 
+            if (!entry.isIntersecting) return; 
+            entry.target.classList.add('is-visible'); 
+            observer.unobserve(entry.target); 
         });
-      }, { threshold: 0.1 });
-      fadeInSections.forEach(section => observer.observe(section));
+    }, { threshold: 0.1 });
+    faders.forEach(fader => appearOnScroll.observe(fader));
 
-      // Service Filter
-      const filter = document.getElementById('services-filter');
-      filter.addEventListener('change', () => {
-        const value = filter.value;
-        document.querySelectorAll('.services-grid, .service-category-title').forEach(el => {
-          const category = el.getAttribute('data-category');
-          el.style.display = (value === 'all' || value === category) ? 'block' : 'none';
-        });
-      });
-
-      // Form Submission via WhatsApp
-      const bookingForm = document.getElementById('booking-form');
-      const whatsappForm = document.getElementById('whatsapp-form');
-
-      bookingForm.addEventListener('submit', (e) => {
+    document.getElementById('booking-form').addEventListener('submit', function (e) {
         e.preventDefault();
         const name = document.getElementById('booking-name').value;
         const phone = document.getElementById('booking-phone').value;
@@ -822,25 +1221,42 @@
         const time = document.getElementById('booking-time').value;
         const service = document.getElementById('booking-service').value;
         const message = document.getElementById('booking-message').value;
-        const text = `Booking Request\nName: ${name}\nPhone: ${phone}\nDate: ${date}\nTime: ${time}\nService: ${service}\nDetails: ${message}`;
-        const encodedText = encodeURIComponent(text);
-        window.open(`https://wa.me/919447405746?text=${encodedText}`, '_blank');
-        bookingForm.reset();
-        alert('Your booking request has been sent via WhatsApp!');
-      });
+        
+        let text = `*New Appointment Request* 📅\n\n*Name:* ${name}\n*Phone:* ${phone}\n*Preferred Date:* ${date}\n*Preferred Time:* ${time}\n*Service:* ${service}\n`;
+        if (message) text += `*Details:* ${message}`;
+        
+        window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`, '_blank');
+    });
 
-      whatsappForm.addEventListener('submit', (e) => {
+    document.getElementById('whatsapp-form').addEventListener('submit', function (e) {
         e.preventDefault();
         const name = document.getElementById('name').value;
-        const phone = document.getElementById('phone').value;
+        const userPhone = document.getElementById('phone').value;
         const message = document.getElementById('message').value;
-        const text = `Feedback/Inquiry\nName: ${name}\nPhone: ${phone || 'Not provided'}\nMessage: ${message}`;
-        const encodedText = encodeURIComponent(text);
-        window.open(`https://wa.me/919447405746?text=${encodedText}`, '_blank');
-        whatsappForm.reset();
-        alert('Your feedback has been sent via WhatsApp!');
-      });
+        let text = `*New Feedback/Inquiry* ✨\n\n*Name:* ${name}\n`;
+        if (userPhone) text += `*Phone:* ${userPhone}\n`;
+        text += `*Message:* ${message}`;
+        window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`, '_blank');
     });
-  </script>
+
+    const scrollToTopBtn = document.querySelector('.scroll-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        scrollToTopBtn.classList.add('show');
+      } else {
+        scrollToTopBtn.classList.remove('show');
+      }
+    });
+
+    const chatLauncher = document.getElementById('chat-launcher');
+    const chatWidget = document.getElementById('chat-widget');
+    const chatCloseBtn = document.getElementById('chat-close-btn');
+
+    chatLauncher.addEventListener('click', () => chatWidget.classList.toggle('show'));
+    chatCloseBtn.addEventListener('click', () => chatWidget.classList.remove('show'));
+});
+</script>
+
 </body>
 </html>
+  
