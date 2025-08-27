@@ -17,7 +17,6 @@
   <meta property="og:image" content="images/og-image.jpg">
   <meta property="og:url" content="https://www.your-ozon-website.com/">
   <meta property="og:site_name" content="Ozon Detailing & Car Wash">
-  <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,6 +39,9 @@
       --dark-border: #2a2a2a;
       --dark-secondary: #4a4a4a;
       --dark-light: #2c2c2c;
+      --night-sky: #0a1d37;
+      --star-color: #ffffff;
+      --moon-glow: #e6f0fa;
     }
 
     [data-theme="dark"] {
@@ -49,6 +51,8 @@
       --heading-color: var(--dark-heading);
       --border-color: var(--dark-border);
       --secondary-color: var(--dark-secondary);
+      --night-sky: #1c2526;
+      --moon-glow: #b0c4de;
     }
 
     * {
@@ -66,7 +70,7 @@
       color: var(--text-color);
       line-height: 1.8;
       background: var(--background-white);
-      font-size: clamp(15px, 2.5vw, 17px);
+      font-size: clamp(14px, 2.5vw, 16px);
     }
 
     h1, h2, h3, h4 {
@@ -78,30 +82,30 @@
     .container {
       max-width: 1280px;
       margin: 0 auto;
-      padding: 0 clamp(15px, 3vw, 25px);
+      padding: 0 clamp(10px, 3vw, 20px);
     }
 
     .section {
-      padding: clamp(60px, 10vw, 100px) 0;
+      padding: clamp(50px, 10vw, 80px) 0;
     }
 
     .section-title {
       text-align: center;
-      margin-bottom: clamp(30px, 5vw, 50px);
+      margin-bottom: clamp(25px, 5vw, 40px);
     }
 
     .section-title h2 {
-      font-size: clamp(2rem, 5vw, 3rem);
+      font-size: clamp(1.8rem, 5vw, 2.8rem);
       font-weight: 700;
-      padding-bottom: 10px;
+      padding-bottom: 8px;
       position: relative;
     }
 
     .section-title h2::after {
       content: '';
       position: absolute;
-      width: 60px;
-      height: 4px;
+      width: 50px;
+      height: 3px;
       background: var(--primary-color);
       bottom: 0;
       left: 50%;
@@ -110,13 +114,13 @@
 
     .btn {
       display: inline-block;
-      padding: clamp(12px, 2vw, 14px) clamp(20px, 3vw, 35px);
+      padding: clamp(10px, 2vw, 12px) clamp(15px, 3vw, 30px);
       background: var(--primary-color);
       color: #fff;
       text-decoration: none;
       border-radius: 50px;
       font-weight: 600;
-      font-size: clamp(14px, 2vw, 16px);
+      font-size: clamp(13px, 2vw, 15px);
       transition: background 0.3s, transform 0.2s;
     }
 
@@ -141,8 +145,8 @@
       top: 0;
       z-index: 1000;
       background: var(--background-white);
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-      padding: clamp(10px, 2vw, 15px) 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      padding: clamp(8px, 2vw, 12px) 0;
     }
 
     .navbar .container {
@@ -153,17 +157,17 @@
     }
 
     .navbar-brand {
-      font-size: clamp(1.5rem, 3vw, 1.8rem);
+      font-size: clamp(1.4rem, 3vw, 1.7rem);
       font-weight: 700;
       color: var(--primary-color);
       text-decoration: none;
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 10px;
     }
 
     .logo-img {
-      height: clamp(30px, 5vw, 40px);
+      height: clamp(28px, 5vw, 36px);
       width: auto;
     }
 
@@ -174,7 +178,7 @@
     .nav-menu {
       display: flex;
       align-items: center;
-      gap: clamp(20px, 3vw, 30px);
+      gap: clamp(15px, 3vw, 25px);
     }
 
     .nav-links {
@@ -184,16 +188,16 @@
     }
 
     .nav-links li {
-      margin-left: clamp(20px, 3vw, 35px);
+      margin-left: clamp(15px, 3vw, 30px);
     }
 
     .nav-links a {
       text-decoration: none;
       color: var(--secondary-color);
       font-weight: 500;
-      font-size: clamp(14px, 2vw, 16px);
+      font-size: clamp(13px, 2vw, 15px);
       position: relative;
-      padding-bottom: 5px;
+      padding-bottom: 4px;
       transition: color 0.3s;
     }
 
@@ -219,12 +223,12 @@
     .nav-social {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
     }
 
     .nav-social a {
       color: var(--secondary-color);
-      font-size: clamp(1rem, 2vw, 1.2rem);
+      font-size: clamp(0.9rem, 2vw, 1.1rem);
       transition: color 0.3s, transform 0.3s;
     }
 
@@ -236,7 +240,7 @@
     .theme-toggle {
       background: none;
       border: none;
-      font-size: clamp(1rem, 2vw, 1.2rem);
+      font-size: clamp(0.9rem, 2vw, 1.1rem);
       color: var(--secondary-color);
       cursor: pointer;
       transition: color 0.3s;
@@ -248,7 +252,7 @@
 
     .nav-toggle {
       display: none;
-      font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+      font-size: clamp(1.1rem, 2.5vw, 1.4rem);
       color: var(--primary-color);
       background: none;
       border: none;
@@ -262,92 +266,27 @@
       justify-content: center;
       text-align: center;
       background: radial-gradient(circle, #eef7ff 0%, var(--background-white) 70%);
-      padding: clamp(40px, 10vh, 80px) 0;
+      padding: clamp(30px, 10vh, 60px) 0;
     }
 
     .home-content h1 {
-      font-size: clamp(2rem, 6vw, 4.5rem);
+      font-size: clamp(1.8rem, 6vw, 4rem);
       margin-bottom: 0.5em;
     }
 
     .home-content p {
-      font-size: clamp(1rem, 2.5vw, 1.3rem);
-      max-width: 650px;
-      margin: 0 auto clamp(20px, 3vw, 30px);
+      font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+      max-width: 600px;
+      margin: 0 auto clamp(15px, 3vw, 25px);
     }
 
     .hero-animation {
       position: relative;
-      width: clamp(200px, 50vw, 300px);
-      height: clamp(150px, 30vw, 200px);
-      margin: 0 auto clamp(20px, 5vw, 40px);
-    }
-
-    .shop {
-      width: clamp(150px, 40vw, 200px);
-      height: clamp(100px, 25vw, 150px);
+      width: clamp(200px, 70vw, 350px);
+      height: clamp(100px, 25vw, 130px);
+      margin: 0 auto clamp(15px, 5vw, 30px);
       background: var(--background-light);
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      border-radius: 10px;
-      border: 2px solid var(--border-color);
-    }
-
-    .garage-door {
-      width: clamp(80px, 20vw, 120px);
-      height: clamp(60px, 15vw, 100px);
-      background: #adb5bd;
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      animation: openDoor 2s ease-in-out 1.5s forwards;
-    }
-
-    .car {
-      width: clamp(70px, 18vw, 100px);
-      height: clamp(30px, 8vw, 40px);
-      background: var(--primary-color);
-      border-radius: 10px 10px 0 0;
-      position: absolute;
-      bottom: 10px;
-      left: clamp(-100px, -20vw, -120px);
-      animation: driveIn 4s ease-in-out 0.5s forwards;
-    }
-
-    @keyframes driveIn {
-      40% { transform: translateX(clamp(120px, 30vw, 160px)); }
-      100% { transform: translateX(clamp(120px, 30vw, 160px)); }
-    }
-
-    @keyframes openDoor {
-      100% { transform: translate(-50%, -100px); }
-    }
-
-    .about-container {
-      display: grid;
-      grid-template-columns: 1fr 1.2fr;
-      gap: clamp(30px, 5vw, 60px);
-      align-items: center;
-    }
-
-    .about-content h3 {
-      font-size: clamp(1.8rem, 4vw, 2.4rem);
-      color: var(--primary-color);
-      margin-bottom: 20px;
-    }
-
-    .about-content p {
-      font-size: clamp(14px, 2vw, 16px);
-    }
-
-    .car-animation-container {
-      position: relative;
-      min-height: clamp(200px, 40vw, 300px);
-      background: var(--background-light);
-      border-radius: 10px;
+      border-radius: 8px;
       border: 1px solid var(--border-color);
       overflow: hidden;
     }
@@ -356,61 +295,139 @@
       position: absolute;
       bottom: 0;
       width: 100%;
-      height: clamp(100px, 25vw, 120px);
+      height: clamp(80px, 20vw, 100px);
     }
 
     .road {
       position: absolute;
-      bottom: 20px;
+      bottom: 15px;
       width: 100%;
-      height: 6px;
+      height: 5px;
       background: linear-gradient(90deg, #ccc 50%, transparent 50%);
-      background-size: 20px 6px;
+      background-size: 15px 5px;
     }
 
     .animated-car-body {
       position: absolute;
-      bottom: 26px;
-      left: -150px;
-      width: clamp(100px, 22vw, 130px);
-      height: clamp(35px, 9vw, 45px);
+      bottom: 20px;
+      left: -120px;
+      width: clamp(80px, 20vw, 100px);
+      height: clamp(30px, 8vw, 35px);
       background: var(--primary-color);
-      border-radius: 12px 12px 0 0;
-      animation: drive-across 6s linear infinite;
+      border-radius: 10px 10px 0 0;
+      animation: drive-across 5s linear infinite;
     }
 
     .animated-car-top {
       position: absolute;
-      top: -20px;
-      left: clamp(20px, 5vw, 25px);
-      width: clamp(60px, 14vw, 80px);
-      height: clamp(25px, 6vw, 35px);
+      top: -15px;
+      left: clamp(15px, 4vw, 20px);
+      width: clamp(50px, 12vw, 60px);
+      height: clamp(20px, 5vw, 25px);
       background: var(--primary-color);
-      border-radius: 8px 8px 0 0;
+      border-radius: 6px 6px 0 0;
     }
 
     .wheel {
       position: absolute;
-      bottom: -10px;
-      width: clamp(22px, 5.5vw, 28px);
-      height: clamp(22px, 5.5vw, 28px);
+      bottom: -8px;
+      width: clamp(18px, 4.5vw, 22px);
+      height: clamp(18px, 4.5vw, 22px);
       background: #333;
       border-radius: 50%;
-      border: 4px solid #fff;
-      animation: spin-wheels 0.5s linear infinite;
+      border: 3px solid #fff;
+      animation: spin-wheels 0.4s linear infinite;
     }
 
-    .front-wheel { right: clamp(10px, 2.5vw, 12px); }
-    .back-wheel { left: clamp(10px, 2.5vw, 12px); }
+    .front-wheel { right: clamp(8px, 2vw, 10px); }
+    .back-wheel { left: clamp(8px, 2vw, 10px); }
 
     @keyframes drive-across {
-      0% { left: -150px; }
-      100% { left: calc(100% + 150px); }
+      0% { left: -120px; }
+      100% { left: calc(100% + 120px); }
     }
 
     @keyframes spin-wheels {
       from { transform: rotate(0deg); }
       to { transform: rotate(360deg); }
+    }
+
+    .about-container {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: clamp(20px, 5vw, 50px);
+      align-items: center;
+    }
+
+    .about-content h3 {
+      font-size: clamp(1.6rem, 4vw, 2.2rem);
+      color: var(--primary-color);
+      margin-bottom: 15px;
+    }
+
+    .about-content p {
+      font-size: clamp(13px, 2vw, 15px);
+    }
+
+    .car-animation-container {
+      position: relative;
+      min-height: clamp(180px, 40vw, 250px);
+      max-width: 450px;
+      margin: 0 auto;
+      background: var(--night-sky);
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+      overflow: hidden;
+    }
+
+    .night-sky {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, var(--night-sky) 0%, #2c3e50 100%);
+    }
+
+    .star {
+      position: absolute;
+      background: var(--star-color);
+      border-radius: 50%;
+      opacity: 0;
+      animation: twinkle 2s infinite;
+    }
+
+    .star:nth-child(1) { width: 2px; height: 2px; top: 10%; left: 15%; animation-delay: 0s; }
+    .star:nth-child(2) { width: 3px; height: 3px; top: 20%; left: 30%; animation-delay: 0.5s; }
+    .star:nth-child(3) { width: 2px; height: 2px; top: 15%; left: 50%; animation-delay: 1s; }
+    .star:nth-child(4) { width: 3px; height: 3px; top: 25%; left: 70%; animation-delay: 1.5s; }
+    .star:nth-child(5) { width: 2px; height: 2px; top: 30%; left: 20%; animation-delay: 0.3s; }
+    .star:nth-child(6) { width: 3px; height: 3px; top: 40%; left: 40%; animation-delay: 0.8s; }
+    .star:nth-child(7) { width: 2px; height: 2px; top: 35%; left: 60%; animation-delay: 1.2s; }
+    .star:nth-child(8) { width: 3px; height: 3px; top: 45%; left: 10%; animation-delay: 0.6s; }
+    .star:nth-child(9) { width: 2px; height: 2px; top: 50%; left: 25%; animation-delay: 0.9s; }
+    .star:nth-child(10) { width: 3px; height: 3px; top: 55%; left: 45%; animation-delay: 1.3s; }
+
+    @keyframes twinkle {
+      0%, 100% { opacity: 0; }
+      50% { opacity: 1; }
+    }
+
+    .moon {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: clamp(30px, 8vw, 40px);
+      height: clamp(30px, 8vw, 40px);
+      background: #f1f1f1;
+      border-radius: 50%;
+      box-shadow: 0 0 15px 5px var(--moon-glow);
+      animation: glow 3s ease-in-out infinite;
+    }
+
+    @keyframes glow {
+      0%, 100% { box-shadow: 0 0 15px 5px var(--moon-glow); }
+      50% { box-shadow: 0 0 20px 8px var(--moon-glow); }
     }
 
     #services {
@@ -419,41 +436,41 @@
 
     .services-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(clamp(250px, 30vw, 300px), 1fr));
-      gap: clamp(20px, 3vw, 35px);
+      grid-template-columns: repeat(auto-fit, minmax(clamp(220px, 30vw, 280px), 1fr));
+      gap: clamp(15px, 3vw, 30px);
     }
 
     .service-card {
       background: var(--background-white);
-      padding: clamp(20px, 3vw, 35px);
+      padding: clamp(15px, 3vw, 30px);
       text-align: center;
-      border-radius: 10px;
+      border-radius: 8px;
       border: 1px solid var(--border-color);
       transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
-      min-height: clamp(260px, 35vw, 280px);
+      min-height: clamp(240px, 35vw, 260px);
       display: flex;
       flex-direction: column;
     }
 
     .service-card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.08);
       background: #f0f7ff;
     }
 
     .service-icon {
-      font-size: clamp(2rem, 5vw, 2.8rem);
+      font-size: clamp(1.8rem, 5vw, 2.5rem);
       color: var(--primary-color);
-      margin-bottom: clamp(15px, 3vw, 20px);
+      margin-bottom: clamp(12px, 3vw, 15px);
     }
 
     .service-card h4 {
-      font-size: clamp(1.2rem, 2.5vw, 1.4rem);
-      margin-bottom: 10px;
+      font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+      margin-bottom: 8px;
     }
 
     .service-card p {
-      font-size: clamp(0.9rem, 2vw, 1rem);
+      font-size: clamp(0.85rem, 2vw, 0.95rem);
       flex-grow: 1;
     }
 
@@ -472,16 +489,16 @@
 
     .instagram-cta {
       background: linear-gradient(135deg, #405DE6, #833AB4, #E1306C, #FCAF45);
-      padding: clamp(40px, 8vw, 80px) clamp(20px, 4vw, 40px);
-      border-radius: 15px;
+      padding: clamp(30px, 8vw, 60px) clamp(15px, 4vw, 30px);
+      border-radius: 12px;
       text-align: center;
       color: #fff;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     }
 
     .instagram-cta i {
-      font-size: clamp(3rem, 6vw, 4.5rem);
-      margin-bottom: clamp(15px, 3vw, 20px);
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      margin-bottom: clamp(12px, 3vw, 15px);
       transition: transform 0.3s;
     }
 
@@ -490,12 +507,12 @@
     }
 
     .instagram-cta h3 {
-      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
     }
 
     .instagram-cta p {
-      font-size: clamp(1rem, 2vw, 1.2rem);
-      margin-bottom: clamp(20px, 3vw, 30px);
+      font-size: clamp(0.9rem, 2vw, 1.1rem);
+      margin-bottom: clamp(15px, 3vw, 25px);
     }
 
     .instagram-cta .btn {
@@ -512,31 +529,31 @@
     }
 
     .contact-wrapper {
-      max-width: clamp(500px, 80vw, 700px);
+      max-width: clamp(450px, 80vw, 650px);
       margin: 0 auto;
       background: var(--background-white);
-      padding: clamp(20px, 5vw, 40px);
-      border-radius: 10px;
+      padding: clamp(15px, 5vw, 30px);
+      border-radius: 8px;
       border: 1px solid var(--border-color);
     }
 
     .contact-form .form-group {
-      margin-bottom: clamp(15px, 2vw, 20px);
+      margin-bottom: clamp(12px, 2vw, 15px);
     }
 
     .contact-form input, .contact-form textarea, .contact-form select {
       width: 100%;
-      padding: clamp(10px, 2vw, 14px);
+      padding: clamp(8px, 2vw, 12px);
       border: 1px solid var(--border-color);
       border-radius: 5px;
       font-family: 'Poppins', sans-serif;
-      font-size: clamp(14px, 2vw, 16px);
+      font-size: clamp(13px, 2vw, 15px);
       color: var(--text-color);
     }
 
     .contact-form select {
-      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23007bff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E") no-repeat right 15px center;
-      background-size: 16px;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' fill='%23007bff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E") no-repeat right 12px center;
+      background-size: 14px;
     }
 
     .contact-form select:required:invalid {
@@ -550,26 +567,26 @@
     .contact-form .form-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: clamp(15px, 2vw, 20px);
+      gap: clamp(12px, 2vw, 15px);
     }
 
     .contact-form button {
       width: 100%;
-      padding: clamp(12px, 2vw, 15px);
+      padding: clamp(10px, 2vw, 12px);
       background: var(--whatsapp-color);
       color: #fff;
       border: none;
       border-radius: 5px;
-      font-size: clamp(1rem, 2vw, 1.1rem);
+      font-size: clamp(0.9rem, 2vw, 1rem);
       font-weight: 600;
     }
 
     .map-container {
-      margin-top: clamp(30px, 5vw, 60px);
-      border-radius: 10px;
+      margin-top: clamp(25px, 5vw, 50px);
+      border-radius: 8px;
       overflow: hidden;
       border: 1px solid var(--border-color);
-      height: clamp(300px, 50vw, 450px);
+      height: clamp(250px, 50vw, 400px);
     }
 
     .map-container iframe {
@@ -581,26 +598,26 @@
     footer {
       background: var(--secondary-color);
       color: var(--dark-text);
-      padding: clamp(40px, 8vw, 60px) 0 clamp(20px, 4vw, 30px);
+      padding: clamp(30px, 8vw, 50px) 0 clamp(15px, 4vw, 25px);
     }
 
     .footer-grid {
       display: grid;
       grid-template-columns: 1fr 1.5fr;
-      gap: clamp(20px, 4vw, 40px);
-      margin-bottom: clamp(20px, 4vw, 40px);
+      gap: clamp(15px, 4vw, 30px);
+      margin-bottom: clamp(15px, 4vw, 30px);
     }
 
     .footer-col h4 {
       color: var(--dark-heading);
-      margin-bottom: clamp(15px, 3vw, 20px);
-      font-size: clamp(1rem, 2vw, 1.2rem);
+      margin-bottom: clamp(12px, 3vw, 15px);
+      font-size: clamp(0.9rem, 2vw, 1.1rem);
     }
 
     .footer-col p, .footer-col a, .footer-col li {
       color: var(--dark-text);
       text-decoration: none;
-      font-size: clamp(0.9rem, 2vw, 1rem);
+      font-size: clamp(0.85rem, 2vw, 0.95rem);
       transition: color 0.3s;
     }
 
@@ -613,48 +630,48 @@
     }
 
     .footer-col li {
-      margin-bottom: clamp(8px, 2vw, 10px);
+      margin-bottom: clamp(6px, 2vw, 8px);
       display: flex;
       align-items: flex-start;
     }
 
     .footer-col i {
-      margin-right: 10px;
-      width: 20px;
+      margin-right: 8px;
+      width: 18px;
       color: var(--primary-color);
-      margin-top: 5px;
+      margin-top: 4px;
     }
 
     .footer-social {
-      margin-top: clamp(15px, 3vw, 20px);
+      margin-top: clamp(12px, 3vw, 15px);
     }
 
     .footer-social a {
-      font-size: clamp(1.2rem, 2.5vw, 1.5rem);
-      margin-right: clamp(10px, 2vw, 15px);
+      font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+      margin-right: clamp(8px, 2vw, 12px);
     }
 
     .footer-bottom {
       text-align: center;
-      padding-top: clamp(20px, 4vw, 30px);
+      padding-top: clamp(15px, 4vw, 25px);
       border-top: 1px solid var(--dark-border);
-      font-size: clamp(0.8rem, 1.5vw, 0.9rem);
+      font-size: clamp(0.75rem, 1.5vw, 0.85rem);
     }
 
     .scroll-to-top {
       position: fixed;
-      bottom: clamp(20px, 4vw, 30px);
-      left: clamp(20px, 4vw, 30px);
-      width: clamp(40px, 8vw, 50px);
-      height: clamp(40px, 8vw, 50px);
+      bottom: clamp(15px, 4vw, 25px);
+      left: clamp(15px, 4vw, 25px);
+      width: clamp(35px, 8vw, 45px);
+      height: clamp(35px, 8vw, 45px);
       background: var(--primary-color);
       color: #fff;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: clamp(20px, 4vw, 24px);
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      font-size: clamp(18px, 4vw, 22px);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
       z-index: 100;
       opacity: 0;
       visibility: hidden;
@@ -673,18 +690,18 @@
 
     .chat-launcher {
       position: fixed;
-      bottom: clamp(20px, 4vw, 30px);
-      right: clamp(20px, 4vw, 30px);
-      width: clamp(50px, 10vw, 60px);
-      height: clamp(50px, 10vw, 60px);
+      bottom: clamp(15px, 4vw, 25px);
+      right: clamp(15px, 4vw, 25px);
+      width: clamp(45px, 10vw, 55px);
+      height: clamp(45px, 10vw, 55px);
       background: var(--primary-color);
       color: #fff;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: clamp(24px, 5vw, 30px);
-      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      font-size: clamp(22px, 5vw, 28px);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
       z-index: 101;
       transition: transform 0.3s;
     }
@@ -695,13 +712,13 @@
 
     .chat-widget {
       position: fixed;
-      bottom: clamp(80px, 15vw, 100px);
-      right: clamp(20px, 4vw, 30px);
-      width: clamp(280px, 80vw, 350px);
-      max-width: calc(100% - 40px);
+      bottom: clamp(70px, 15vw, 90px);
+      right: clamp(15px, 4vw, 25px);
+      width: clamp(260px, 80vw, 320px);
+      max-width: calc(100% - 30px);
       background: var(--background-white);
-      border-radius: 15px;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
       z-index: 100;
       opacity: 0;
       visibility: hidden;
@@ -718,7 +735,7 @@
     .chat-widget-header {
       background: var(--primary-color);
       color: #fff;
-      padding: clamp(10px, 2vw, 15px) clamp(15px, 3vw, 20px);
+      padding: clamp(8px, 2vw, 12px) clamp(12px, 3vw, 15px);
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -726,54 +743,55 @@
 
     .chat-widget-header h4 {
       margin: 0;
-      font-size: clamp(1rem, 2vw, 1.1rem);
+      font-size: clamp(0.9rem, 2vw, 1rem);
     }
 
     .chat-widget-header .close-btn {
       background: none;
       border: none;
       color: #fff;
-      font-size: clamp(20px, 4vw, 24px);
+      font-size: clamp(18px, 4vw, 22px);
       cursor: pointer;
     }
 
     .chat-widget-body {
-      padding: clamp(15px, 3vw, 25px) clamp(15px, 3vw, 20px);
+      padding: clamp(12px, 3vw, 20px) clamp(12px, 3vw, 15px);
       text-align: center;
     }
 
     .chat-widget-body .icon {
-      font-size: clamp(2rem, 5vw, 3rem);
+      font-size: clamp(1.8rem, 5vw, 2.5rem);
       color: var(--primary-color);
-      margin-bottom: clamp(10px, 2vw, 15px);
+      margin-bottom: clamp(8px, 2vw, 12px);
     }
 
     .chat-widget-body h5 {
-      font-size: clamp(1rem, 2vw, 1.2rem);
-      margin-bottom: clamp(8px, 2vw, 10px);
+      font-size: clamp(0.9rem, 2vw, 1.1rem);
+      margin-bottom: clamp(6px, 2vw, 8px);
     }
 
     .chat-widget-body p {
-      font-size: clamp(0.85rem, 1.5vw, 0.95rem);
-      margin-bottom: clamp(15px, 3vw, 25px);
+      font-size: clamp(0.8rem, 1.5vw, 0.9rem);
+      margin-bottom: clamp(12px, 3vw, 20px);
     }
 
     .chat-widget-body .btn-chat {
       background: var(--whatsapp-color);
       width: 100%;
-      padding: clamp(10px, 2vw, 12px);
+      padding: clamp(8px, 2vw, 10px);
     }
 
     @media (max-width: 992px) {
       .about-container {
         grid-template-columns: 1fr;
-        gap: clamp(20px, 4vw, 30px);
+        gap: clamp(15px, 4vw, 25px);
         text-align: center;
       }
 
       .car-animation-container {
         margin: 0 auto;
-        max-width: 500px;
+        max-width: 400px;
+        min-height: clamp(150px, 35vw, 200px);
       }
     }
 
@@ -786,8 +804,8 @@
         left: 0;
         width: 100%;
         background: var(--background-white);
-        padding: clamp(15px, 3vw, 20px) 0;
-        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        padding: clamp(12px, 3vw, 15px) 0;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       }
 
       .nav-menu.active {
@@ -800,17 +818,17 @@
       }
 
       .nav-links li {
-        margin: clamp(8px, 2vw, 10px) 0;
+        margin: clamp(6px, 2vw, 8px) 0;
       }
 
       .nav-social {
-        margin-top: clamp(15px, 3vw, 20px);
-        padding-top: clamp(15px, 3vw, 20px);
+        margin-top: clamp(12px, 3vw, 15px);
+        padding-top: clamp(12px, 3vw, 15px);
         border-top: 1px solid var(--border-color);
       }
 
       .nav-social a {
-        margin: 0 clamp(8px, 2vw, 10px);
+        margin: 0 clamp(6px, 2vw, 8px);
       }
 
       .nav-toggle {
@@ -836,11 +854,11 @@
       }
 
       .navbar-brand {
-        font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+        font-size: clamp(1.1rem, 2.5vw, 1.4rem);
       }
 
       .section-title h2 {
-        font-size: clamp(1.8rem, 4vw, 2.2rem);
+        font-size: clamp(1.6rem, 4vw, 2rem);
       }
 
       .services-grid {
@@ -848,8 +866,73 @@
       }
 
       .chat-widget {
-        width: clamp(250px, 90vw, 300px);
+        width: clamp(240px, 90vw, 280px);
       }
+
+      .hero-animation {
+        width: clamp(180px, 85vw, 280px);
+        height: clamp(80px, 20vw, 100px);
+      }
+
+      .car-animation-container {
+        width: clamp(180px, 85vw, 280px);
+        min-height: clamp(120px, 30vw, 160px);
+      }
+
+      .road-and-car {
+        height: clamp(60px, 15vw, 80px);
+      }
+
+      .road {
+        bottom: 10px;
+        height: 4px;
+        background-size: 12px 4px;
+      }
+
+      .animated-car-body {
+        bottom: 14px;
+        left: -100px;
+        width: clamp(60px, 18vw, 80px);
+        height: clamp(25px, 7vw, 30px);
+        animation: drive-across 4s linear infinite;
+      }
+
+      .animated-car-top {
+        top: -12px;
+        left: clamp(12px, 3vw, 15px);
+        width: clamp(40px, 10vw, 50px);
+        height: clamp(15px, 4vw, 20px);
+      }
+
+      .wheel {
+        bottom: -6px;
+        width: clamp(14px, 4vw, 18px);
+        height: clamp(14px, 4vw, 18px);
+        border: 2px solid #fff;
+        animation: spin-wheels 0.3s linear infinite;
+      }
+
+      .front-wheel { right: clamp(6px, 1.5vw, 8px); }
+      .back-wheel { left: clamp(6px, 1.5vw, 8px); }
+
+      .moon {
+        width: clamp(20px, 6vw, 25px);
+        height: clamp(20px, 6vw, 25px);
+        top: 8px;
+        right: 8px;
+        box-shadow: 0 0 10px 3px var(--moon-glow);
+      }
+
+      .star:nth-child(1) { width: 1.5px; height: 1.5px; }
+      .star:nth-child(2) { width: 2px; height: 2px; }
+      .star:nth-child(3) { width: 1.5px; height: 1.5px; }
+      .star:nth-child(4) { width: 2px; height: 2px; }
+      .star:nth-child(5) { width: 1.5px; height: 1.5px; }
+      .star:nth-child(6) { width: 2px; height: 2px; }
+      .star:nth-child(7) { width: 1.5px; height: 1.5px; }
+      .star:nth-child(8) { width: 2px; height: 2px; }
+      .star:nth-child(9) { width: 1.5px; height: 1.5px; }
+      .star:nth-child(10) { width: 2px; height: 2px; }
     }
   </style>
   <script type="application/ld+json">
@@ -915,8 +998,14 @@
     <div class="container">
       <div class="home-content">
         <div class="hero-animation">
-          <div class="shop"><div class="garage-door"></div></div>
-          <div class="car"></div>
+          <div class="road-and-car">
+            <div class="road"></div>
+            <div class="animated-car-body">
+              <div class="animated-car-top"></div>
+              <div class="wheel front-wheel"></div>
+              <div class="wheel back-wheel"></div>
+            </div>
+          </div>
         </div>
         <h1>Welcome to Ozon Detailing & Car Wash</h1>
         <p>The ultimate destination for vehicle care. We bring your car back to its showroom glory.</p>
@@ -928,6 +1017,19 @@
   <section id="about" class="section fade-in-section">
     <div class="container about-container">
       <div class="car-animation-container">
+        <div class="night-sky">
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="moon"></div>
+        </div>
         <div class="road-and-car">
           <div class="road"></div>
           <div class="animated-car-body">
