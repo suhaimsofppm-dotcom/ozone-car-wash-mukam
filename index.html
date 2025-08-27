@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ozon Detailing & Car Wash | Premium Auto Care</title>
-  <meta name="description" content="Ozon Detailing offers premium car and bike detailing, ceramic coating, underbody coating, painting, accessories, and interior cleaning services.">
-  <meta name="keywords" content="car detailing, car wash, bike detailing, ceramic coating, car accessories, foam wash, auto detailing, Ozon Detailing, paint protection film, headlight restoration, underbody coating, custom painting, graphene coating, borophane coating, window tinting, tyre dressing">
+  <meta name="description" content="Ozon Detailing offers premium car and bike detailing, ceramic coating, underbody coating, painting, accessories, and interior cleaning services. Discover perfection for your vehicle.">
+  <meta name="keywords" content="car detailing, car wash, bike detailing, ceramic coating, car accessories, foam wash, auto detailing, Ozon Detailing, car ceramic coating, premium car wash, paint protection film, headlight restoration, underbody coating, custom painting, graphene coating, borophane coating, window tinting, car tinting, tyre dressing, normal wash, full wash, premium wash">
   <meta name="author" content="Ozon Detailing">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#007bff">
@@ -66,7 +66,7 @@
       color: var(--text-color);
       line-height: 1.8;
       background: var(--background-white);
-      font-size: 17px;
+      font-size: clamp(15px, 2.5vw, 17px);
     }
 
     h1, h2, h3, h4 {
@@ -78,20 +78,20 @@
     .container {
       max-width: 1280px;
       margin: 0 auto;
-      padding: 0 25px;
+      padding: 0 clamp(15px, 3vw, 25px);
     }
 
     .section {
-      padding: 100px 0;
+      padding: clamp(60px, 10vw, 100px) 0;
     }
 
     .section-title {
       text-align: center;
-      margin-bottom: 50px;
+      margin-bottom: clamp(30px, 5vw, 50px);
     }
 
     .section-title h2 {
-      font-size: 3rem;
+      font-size: clamp(2rem, 5vw, 3rem);
       font-weight: 700;
       padding-bottom: 10px;
       position: relative;
@@ -110,12 +110,13 @@
 
     .btn {
       display: inline-block;
-      padding: 14px 35px;
+      padding: clamp(12px, 2vw, 14px) clamp(20px, 3vw, 35px);
       background: var(--primary-color);
       color: #fff;
       text-decoration: none;
       border-radius: 50px;
       font-weight: 600;
+      font-size: clamp(14px, 2vw, 16px);
       transition: background 0.3s, transform 0.2s;
     }
 
@@ -141,17 +142,18 @@
       z-index: 1000;
       background: var(--background-white);
       box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-      padding: 15px 0;
+      padding: clamp(10px, 2vw, 15px) 0;
     }
 
     .navbar .container {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
     }
 
     .navbar-brand {
-      font-size: 1.8rem;
+      font-size: clamp(1.5rem, 3vw, 1.8rem);
       font-weight: 700;
       color: var(--primary-color);
       text-decoration: none;
@@ -161,7 +163,7 @@
     }
 
     .logo-img {
-      height: 40px;
+      height: clamp(30px, 5vw, 40px);
       width: auto;
     }
 
@@ -172,22 +174,24 @@
     .nav-menu {
       display: flex;
       align-items: center;
-      gap: 30px;
+      gap: clamp(20px, 3vw, 30px);
     }
 
     .nav-links {
       list-style: none;
       display: flex;
+      flex-wrap: wrap;
     }
 
     .nav-links li {
-      margin-left: 35px;
+      margin-left: clamp(20px, 3vw, 35px);
     }
 
     .nav-links a {
       text-decoration: none;
       color: var(--secondary-color);
       font-weight: 500;
+      font-size: clamp(14px, 2vw, 16px);
       position: relative;
       padding-bottom: 5px;
       transition: color 0.3s;
@@ -215,12 +219,12 @@
     .nav-social {
       display: flex;
       align-items: center;
+      gap: 10px;
     }
 
     .nav-social a {
       color: var(--secondary-color);
-      font-size: 1.2rem;
-      margin-left: 15px;
+      font-size: clamp(1rem, 2vw, 1.2rem);
       transition: color 0.3s, transform 0.3s;
     }
 
@@ -232,7 +236,7 @@
     .theme-toggle {
       background: none;
       border: none;
-      font-size: 1.2rem;
+      font-size: clamp(1rem, 2vw, 1.2rem);
       color: var(--secondary-color);
       cursor: pointer;
       transition: color 0.3s;
@@ -244,7 +248,7 @@
 
     .nav-toggle {
       display: none;
-      font-size: 1.5rem;
+      font-size: clamp(1.2rem, 2.5vw, 1.5rem);
       color: var(--primary-color);
       background: none;
       border: none;
@@ -258,29 +262,30 @@
       justify-content: center;
       text-align: center;
       background: radial-gradient(circle, #eef7ff 0%, var(--background-white) 70%);
+      padding: clamp(40px, 10vh, 80px) 0;
     }
 
     .home-content h1 {
-      font-size: clamp(2.8rem, 6vw, 5.5rem);
+      font-size: clamp(2rem, 6vw, 4.5rem);
       margin-bottom: 0.5em;
     }
 
     .home-content p {
-      font-size: 1.3rem;
+      font-size: clamp(1rem, 2.5vw, 1.3rem);
       max-width: 650px;
-      margin: 0 auto 30px;
+      margin: 0 auto clamp(20px, 3vw, 30px);
     }
 
     .hero-animation {
       position: relative;
-      width: 300px;
-      height: 200px;
-      margin: 0 auto 40px;
+      width: clamp(200px, 50vw, 300px);
+      height: clamp(150px, 30vw, 200px);
+      margin: 0 auto clamp(20px, 5vw, 40px);
     }
 
     .shop {
-      width: 200px;
-      height: 150px;
+      width: clamp(150px, 40vw, 200px);
+      height: clamp(100px, 25vw, 150px);
       background: var(--background-light);
       position: absolute;
       bottom: 0;
@@ -291,51 +296,56 @@
     }
 
     .garage-door {
-      width: 120px;
-      height: 100px;
+      width: clamp(80px, 20vw, 120px);
+      height: clamp(60px, 15vw, 100px);
       background: #adb5bd;
       position: absolute;
       bottom: 0;
-      left: 40px;
+      left: 50%;
+      transform: translateX(-50%);
       animation: openDoor 2s ease-in-out 1.5s forwards;
     }
 
     .car {
-      width: 100px;
-      height: 40px;
+      width: clamp(70px, 18vw, 100px);
+      height: clamp(30px, 8vw, 40px);
       background: var(--primary-color);
       border-radius: 10px 10px 0 0;
       position: absolute;
       bottom: 10px;
-      left: -120px;
+      left: clamp(-100px, -20vw, -120px);
       animation: driveIn 4s ease-in-out 0.5s forwards;
     }
 
     @keyframes driveIn {
-      40% { transform: translateX(160px); }
-      100% { transform: translateX(160px); }
+      40% { transform: translateX(clamp(120px, 30vw, 160px)); }
+      100% { transform: translateX(clamp(120px, 30vw, 160px)); }
     }
 
     @keyframes openDoor {
-      100% { transform: translateY(-100px); }
+      100% { transform: translate(-50%, -100px); }
     }
 
     .about-container {
       display: grid;
       grid-template-columns: 1fr 1.2fr;
-      gap: 60px;
+      gap: clamp(30px, 5vw, 60px);
       align-items: center;
     }
 
     .about-content h3 {
-      font-size: 2.4rem;
+      font-size: clamp(1.8rem, 4vw, 2.4rem);
       color: var(--primary-color);
       margin-bottom: 20px;
     }
 
+    .about-content p {
+      font-size: clamp(14px, 2vw, 16px);
+    }
+
     .car-animation-container {
       position: relative;
-      min-height: 350px;
+      min-height: clamp(250px, 40vw, 350px);
       background: var(--background-light);
       border-radius: 10px;
       border: 1px solid var(--border-color);
@@ -345,7 +355,7 @@
     .road-and-car {
       position: relative;
       width: 100%;
-      height: 100px;
+      height: clamp(80px, 20vw, 100px);
     }
 
     .road {
@@ -359,9 +369,9 @@
     .animated-car-body {
       position: absolute;
       bottom: 22px;
-      left: -150px;
-      width: 120px;
-      height: 40px;
+      left: clamp(-120px, -25vw, -150px);
+      width: clamp(90px, 20vw, 120px);
+      height: clamp(30px, 8vw, 40px);
       background: var(--primary-color);
       border-radius: 10px 10px 0 0;
       animation: drive-across 7s linear infinite 1s;
@@ -369,10 +379,10 @@
 
     .animated-car-top {
       position: absolute;
-      top: -20px;
-      left: 20px;
-      width: 70px;
-      height: 30px;
+      top: clamp(-15px, -4vw, -20px);
+      left: clamp(15px, 4vw, 20px);
+      width: clamp(50px, 12vw, 70px);
+      height: clamp(20px, 5vw, 30px);
       background: var(--primary-color);
       border-radius: 10px 10px 0 0;
     }
@@ -380,19 +390,19 @@
     .wheel {
       position: absolute;
       bottom: -10px;
-      width: 25px;
-      height: 25px;
+      width: clamp(20px, 5vw, 25px);
+      height: clamp(20px, 5vw, 25px);
       background: #333;
       border-radius: 50%;
       border: 3px solid #fff;
       animation: spin-wheels 0.7s linear infinite 1s;
     }
 
-    .front-wheel { right: 10px; }
-    .back-wheel { left: 10px; }
+    .front-wheel { right: clamp(8px, 2vw, 10px); }
+    .back-wheel { left: clamp(8px, 2vw, 10px); }
 
     @keyframes drive-across {
-      0% { left: -150px; }
+      0% { left: clamp(-120px, -25vw, -150px); }
       100% { left: 110%; }
     }
 
@@ -407,18 +417,18 @@
 
     .services-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 35px;
+      grid-template-columns: repeat(auto-fit, minmax(clamp(250px, 30vw, 300px), 1fr));
+      gap: clamp(20px, 3vw, 35px);
     }
 
     .service-card {
       background: var(--background-white);
-      padding: 35px;
+      padding: clamp(20px, 3vw, 35px);
       text-align: center;
       border-radius: 10px;
       border: 1px solid var(--border-color);
       transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
-      min-height: 280px;
+      min-height: clamp(260px, 35vw, 280px);
       display: flex;
       flex-direction: column;
     }
@@ -430,18 +440,18 @@
     }
 
     .service-icon {
-      font-size: 2.8rem;
+      font-size: clamp(2rem, 5vw, 2.8rem);
       color: var(--primary-color);
-      margin-bottom: 20px;
+      margin-bottom: clamp(15px, 3vw, 20px);
     }
 
     .service-card h4 {
-      font-size: 1.4rem;
+      font-size: clamp(1.2rem, 2.5vw, 1.4rem);
       margin-bottom: 10px;
     }
 
     .service-card p {
-      font-size: 1rem;
+      font-size: clamp(0.9rem, 2vw, 1rem);
       flex-grow: 1;
     }
 
@@ -460,7 +470,7 @@
 
     .instagram-cta {
       background: linear-gradient(135deg, #405DE6, #833AB4, #E1306C, #FCAF45);
-      padding: 80px 40px;
+      padding: clamp(40px, 8vw, 80px) clamp(20px, 4vw, 40px);
       border-radius: 15px;
       text-align: center;
       color: #fff;
@@ -468,8 +478,8 @@
     }
 
     .instagram-cta i {
-      font-size: 4.5rem;
-      margin-bottom: 20px;
+      font-size: clamp(3rem, 6vw, 4.5rem);
+      margin-bottom: clamp(15px, 3vw, 20px);
       transition: transform 0.3s;
     }
 
@@ -478,7 +488,12 @@
     }
 
     .instagram-cta h3 {
-      font-size: 2.8rem;
+      font-size: clamp(2rem, 4vw, 2.8rem);
+    }
+
+    .instagram-cta p {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      margin-bottom: clamp(20px, 3vw, 30px);
     }
 
     .instagram-cta .btn {
@@ -495,25 +510,25 @@
     }
 
     .contact-wrapper {
-      max-width: 700px;
+      max-width: clamp(500px, 80vw, 700px);
       margin: 0 auto;
       background: var(--background-white);
-      padding: 40px;
+      padding: clamp(20px, 5vw, 40px);
       border-radius: 10px;
       border: 1px solid var(--border-color);
     }
 
     .contact-form .form-group {
-      margin-bottom: 20px;
+      margin-bottom: clamp(15px, 2vw, 20px);
     }
 
     .contact-form input, .contact-form textarea, .contact-form select {
       width: 100%;
-      padding: 14px;
+      padding: clamp(10px, 2vw, 14px);
       border: 1px solid var(--border-color);
       border-radius: 5px;
       font-family: 'Poppins', sans-serif;
-      font-size: 1rem;
+      font-size: clamp(14px, 2vw, 16px);
       color: var(--text-color);
     }
 
@@ -533,26 +548,26 @@
     .contact-form .form-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
+      gap: clamp(15px, 2vw, 20px);
     }
 
     .contact-form button {
       width: 100%;
-      padding: 15px;
+      padding: clamp(12px, 2vw, 15px);
       background: var(--whatsapp-color);
       color: #fff;
       border: none;
       border-radius: 5px;
-      font-size: 1.1rem;
+      font-size: clamp(1rem, 2vw, 1.1rem);
       font-weight: 600;
     }
 
     .map-container {
-      margin-top: 60px;
+      margin-top: clamp(30px, 5vw, 60px);
       border-radius: 10px;
       overflow: hidden;
       border: 1px solid var(--border-color);
-      height: 450px;
+      height: clamp(300px, 50vw, 450px);
     }
 
     .map-container iframe {
@@ -564,25 +579,26 @@
     footer {
       background: var(--secondary-color);
       color: var(--dark-text);
-      padding: 60px 0 30px;
+      padding: clamp(40px, 8vw, 60px) 0 clamp(20px, 4vw, 30px);
     }
 
     .footer-grid {
       display: grid;
       grid-template-columns: 1fr 1.5fr;
-      gap: 40px;
-      margin-bottom: 40px;
+      gap: clamp(20px, 4vw, 40px);
+      margin-bottom: clamp(20px, 4vw, 40px);
     }
 
     .footer-col h4 {
       color: var(--dark-heading);
-      margin-bottom: 20px;
-      font-size: 1.2rem;
+      margin-bottom: clamp(15px, 3vw, 20px);
+      font-size: clamp(1rem, 2vw, 1.2rem);
     }
 
     .footer-col p, .footer-col a, .footer-col li {
       color: var(--dark-text);
       text-decoration: none;
+      font-size: clamp(0.9rem, 2vw, 1rem);
       transition: color 0.3s;
     }
 
@@ -595,7 +611,7 @@
     }
 
     .footer-col li {
-      margin-bottom: 10px;
+      margin-bottom: clamp(8px, 2vw, 10px);
       display: flex;
       align-items: flex-start;
     }
@@ -608,34 +624,34 @@
     }
 
     .footer-social {
-      margin-top: 20px;
+      margin-top: clamp(15px, 3vw, 20px);
     }
 
     .footer-social a {
-      font-size: 1.5rem;
-      margin-right: 15px;
+      font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+      margin-right: clamp(10px, 2vw, 15px);
     }
 
     .footer-bottom {
       text-align: center;
-      padding-top: 30px;
+      padding-top: clamp(20px, 4vw, 30px);
       border-top: 1px solid var(--dark-border);
-      font-size: 0.9rem;
+      font-size: clamp(0.8rem, 1.5vw, 0.9rem);
     }
 
     .scroll-to-top {
       position: fixed;
-      bottom: 30px;
-      left: 30px;
-      width: 50px;
-      height: 50px;
+      bottom: clamp(20px, 4vw, 30px);
+      left: clamp(20px, 4vw, 30px);
+      width: clamp(40px, 8vw, 50px);
+      height: clamp(40px, 8vw, 50px);
       background: var(--primary-color);
       color: #fff;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 24px;
+      font-size: clamp(20px, 4vw, 24px);
       box-shadow: 0 2px 8px rgba(0,0,0,0.2);
       z-index: 100;
       opacity: 0;
@@ -655,17 +671,17 @@
 
     .chat-launcher {
       position: fixed;
-      bottom: 30px;
-      right: 30px;
-      width: 60px;
-      height: 60px;
+      bottom: clamp(20px, 4vw, 30px);
+      right: clamp(20px, 4vw, 30px);
+      width: clamp(50px, 10vw, 60px);
+      height: clamp(50px, 10vw, 60px);
       background: var(--primary-color);
       color: #fff;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 30px;
+      font-size: clamp(24px, 5vw, 30px);
       box-shadow: 0 2px 8px rgba(0,0,0,0.3);
       z-index: 101;
       transition: transform 0.3s;
@@ -677,9 +693,9 @@
 
     .chat-widget {
       position: fixed;
-      bottom: 100px;
-      right: 30px;
-      width: 350px;
+      bottom: clamp(80px, 15vw, 100px);
+      right: clamp(20px, 4vw, 30px);
+      width: clamp(280px, 80vw, 350px);
       max-width: calc(100% - 40px);
       background: var(--background-white);
       border-radius: 15px;
@@ -700,7 +716,7 @@
     .chat-widget-header {
       background: var(--primary-color);
       color: #fff;
-      padding: 15px 20px;
+      padding: clamp(10px, 2vw, 15px) clamp(15px, 3vw, 20px);
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -708,60 +724,57 @@
 
     .chat-widget-header h4 {
       margin: 0;
-      font-size: 1.1rem;
+      font-size: clamp(1rem, 2vw, 1.1rem);
     }
 
     .chat-widget-header .close-btn {
       background: none;
       border: none;
       color: #fff;
-      font-size: 24px;
+      font-size: clamp(20px, 4vw, 24px);
       cursor: pointer;
     }
 
     .chat-widget-body {
-      padding: 25px 20px;
+      padding: clamp(15px, 3vw, 25px) clamp(15px, 3vw, 20px);
       text-align: center;
     }
 
     .chat-widget-body .icon {
-      font-size: 3rem;
+      font-size: clamp(2rem, 5vw, 3rem);
       color: var(--primary-color);
-      margin-bottom: 15px;
+      margin-bottom: clamp(10px, 2vw, 15px);
     }
 
     .chat-widget-body h5 {
-      font-size: 1.2rem;
-      margin-bottom: 10px;
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      margin-bottom: clamp(8px, 2vw, 10px);
+    }
+
+    .chat-widget-body p {
+      font-size: clamp(0.85rem, 1.5vw, 0.95rem);
+      margin-bottom: clamp(15px, 3vw, 25px);
     }
 
     .chat-widget-body .btn-chat {
       background: var(--whatsapp-color);
       width: 100%;
-      padding: 12px;
+      padding: clamp(10px, 2vw, 12px);
     }
 
     @media (max-width: 992px) {
-      body {
-        font-size: 16px;
-      }
-
-      .section {
-        padding: 80px 0;
-      }
-
       .about-container {
         grid-template-columns: 1fr;
-        gap: 30px;
+        gap: clamp(20px, 4vw, 30px);
         text-align: center;
+      }
+
+      .car-animation-container {
+        margin: 0 auto;
       }
     }
 
     @media (max-width: 768px) {
-      .container {
-        padding: 0 15px;
-      }
-
       .nav-menu {
         display: none;
         flex-direction: column;
@@ -770,7 +783,7 @@
         left: 0;
         width: 100%;
         background: var(--background-white);
-        padding: 20px 0;
+        padding: clamp(15px, 3vw, 20px) 0;
         box-shadow: 0 5px 10px rgba(0,0,0,0.1);
       }
 
@@ -784,13 +797,17 @@
       }
 
       .nav-links li {
-        margin: 10px 0;
+        margin: clamp(8px, 2vw, 10px) 0;
       }
 
       .nav-social {
-        margin-top: 20px;
-        padding-top: 20px;
+        margin-top: clamp(15px, 3vw, 20px);
+        padding-top: clamp(15px, 3vw, 20px);
         border-top: 1px solid var(--border-color);
+      }
+
+      .nav-social a {
+        margin: 0 clamp(8px, 2vw, 10px);
       }
 
       .nav-toggle {
@@ -798,6 +815,10 @@
       }
 
       .contact-form .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
         grid-template-columns: 1fr;
       }
     }
@@ -812,11 +833,19 @@
       }
 
       .navbar-brand {
-        font-size: 1.5rem;
+        font-size: clamp(1.2rem, 2.5vw, 1.5rem);
       }
 
       .section-title h2 {
-        font-size: 2.2rem;
+        font-size: clamp(1.8rem, 4vw, 2.2rem);
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .chat-widget {
+        width: clamp(250px, 90vw, 300px);
       }
     }
   </style>
@@ -1237,4 +1266,5 @@
   </script>
 </body>
 </html>
+
 
