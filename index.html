@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/icon.png">
   <title>Ozon Detailing & Car Wash | Premium Auto Care</title>
   <meta name="description" content="Ozon Detailing offers premium car and bike detailing, ceramic coating, underbody coating, painting, accessories, and interior cleaning services. Discover perfection for your vehicle.">
   <meta name="keywords" content="car detailing, car wash, bike detailing, ceramic coating, car accessories, foam wash, auto detailing, Ozon Detailing, car ceramic coating, premium car wash, paint protection film, headlight restoration, underbody coating, custom painting, graphene coating, borophane coating, window tinting, car tinting, tyre dressing, normal wash, full wash, premium wash, severe car wash, detailing wash">
@@ -31,7 +32,7 @@
       --text-color: #6c757d;
       --heading-color: #212529;
       --border-color: #dee2e6;
-      --whatsapp-color: #25d366;
+      --whatsapp-color: #55a372;
       --heading-font: 'Poppins', sans-serif;
       --dark-bg: #1a1a1a;
       --dark-text: #d1d1d1;
@@ -117,19 +118,21 @@
 
     .btn {
       display: inline-block;
-      padding: clamp(10px, 2vw, 12px) clamp(15px, 3vw, 30px);
+      padding: clamp(12px, 2.5vw, 15px) clamp(20px, 4vw, 35px);
       background: var(--primary-color);
       color: #fff;
       text-decoration: none;
       border-radius: 50px;
       font-weight: 600;
-      font-size: clamp(13px, 2vw, 15px);
-      transition: background 0.3s, transform 0.2s;
+      font-size: clamp(14px, 2.2vw, 16px);
+      transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
     .btn:hover {
       background: #0056b3;
-      transform: translateY(-2px);
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     }
 
     .fade-in-section {
@@ -149,7 +152,7 @@
       z-index: 1000;
       background: var(--background-white);
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-      padding: clamp(8px, 2vw, 12px) 0;
+      padding: clamp(10px, 2.5vw, 15px) 0;
     }
 
     .navbar .container {
@@ -160,17 +163,17 @@
     }
 
     .navbar-brand {
-      font-size: clamp(1.4rem, 3vw, 1.7rem);
+      font-size: clamp(1.5rem, 3.5vw, 1.8rem);
       font-weight: 700;
       color: var(--primary-color);
       text-decoration: none;
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
     }
 
     .logo-img {
-      height: clamp(28px, 5vw, 36px);
+      height: clamp(32px, 6vw, 40px);
       width: auto;
     }
 
@@ -181,7 +184,7 @@
     .nav-menu {
       display: flex;
       align-items: center;
-      gap: clamp(15px, 3vw, 25px);
+      gap: clamp(20px, 4vw, 30px);
     }
 
     .nav-links {
@@ -191,16 +194,16 @@
     }
 
     .nav-links li {
-      margin-left: clamp(15px, 3vw, 30px);
+      margin-left: clamp(20px, 4vw, 35px);
     }
 
     .nav-links a {
       text-decoration: none;
       color: var(--secondary-color);
       font-weight: 500;
-      font-size: clamp(13px, 2vw, 15px);
+      font-size: clamp(14px, 2.2vw, 16px);
       position: relative;
-      padding-bottom: 4px;
+      padding-bottom: 5px;
       transition: color 0.3s;
     }
 
@@ -226,24 +229,24 @@
     .nav-social {
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 10px;
     }
 
     .nav-social a {
       color: var(--secondary-color);
-      font-size: clamp(0.9rem, 2vw, 1.1rem);
+      font-size: clamp(1rem, 2.2vw, 1.2rem);
       transition: color 0.3s, transform 0.3s;
     }
 
     .nav-social a:hover {
       color: var(--primary-color);
-      transform: scale(1.1);
+      transform: scale(1.15);
     }
 
     .theme-toggle {
       background: none;
       border: none;
-      font-size: clamp(0.9rem, 2vw, 1.1rem);
+      font-size: clamp(1rem, 2.2vw, 1.2rem);
       color: var(--secondary-color);
       cursor: pointer;
       transition: color 0.3s;
@@ -255,7 +258,7 @@
 
     .nav-toggle {
       display: none;
-      font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+      font-size: clamp(1.2rem, 3vw, 1.5rem);
       color: var(--primary-color);
       background: none;
       border: none;
@@ -268,117 +271,51 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-      background: radial-gradient(circle, #eef7ff 0%, var(--background-white) 70%);
-      padding: clamp(30px, 10vh, 60px) 0;
+      background: linear-gradient(135deg, #eef7ff 0%, var(--background-white) 100%);
+      padding: clamp(40px, 12vh, 80px) 0;
     }
 
     .home-content h1 {
-      font-size: clamp(1.8rem, 6vw, 4rem);
-      margin-bottom: 0.5em;
+      font-size: clamp(2rem, 7vw, 4.5rem);
+      margin-bottom: 0.6em;
     }
 
     .home-content p {
-      font-size: clamp(0.9rem, 2.5vw, 1.2rem);
-      max-width: 600px;
-      margin: 0 auto clamp(15px, 3vw, 25px);
+      font-size: clamp(1rem, 2.8vw, 1.3rem);
+      max-width: 650px;
+      margin: 0 auto clamp(20px, 4vw, 30px);
     }
 
-    .hero-animation {
-      position: relative;
-      width: clamp(200px, 70vw, 350px);
-      height: clamp(100px, 25vw, 130px);
-      margin: 0 auto clamp(15px, 5vw, 30px);
-      background: var(--background-light);
-      border-radius: 8px;
-      border: 1px solid var(--border-color);
-      overflow: hidden;
-    }
-
-    .road-and-car {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      height: clamp(80px, 20vw, 100px);
-    }
-
-    .road {
-      position: absolute;
-      bottom: 15px;
-      width: 100%;
-      height: 5px;
-      background: linear-gradient(90deg, #ccc 50%, transparent 50%);
-      background-size: 15px 5px;
-    }
-
-    .animated-car-body {
-      position: absolute;
-      bottom: 20px;
-      left: -120px;
-      width: clamp(80px, 20vw, 100px);
-      height: clamp(30px, 8vw, 35px);
-      background: var(--primary-color);
-      border-radius: 10px 10px 0 0;
-      animation: drive-across 5s linear infinite;
-    }
-
-    .animated-car-top {
-      position: absolute;
-      top: -15px;
-      left: clamp(15px, 4vw, 20px);
-      width: clamp(50px, 12vw, 60px);
-      height: clamp(20px, 5vw, 25px);
-      background: var(--primary-color);
-      border-radius: 6px 6px 0 0;
-    }
-
-    .wheel {
-      position: absolute;
-      bottom: -8px;
-      width: clamp(18px, 4.5vw, 22px);
-      height: clamp(18px, 4.5vw, 22px);
-      background: #333;
-      border-radius: 50%;
-      border: 3px solid #fff;
-      animation: spin-wheels 0.4s linear infinite;
-    }
-
-    .front-wheel { right: clamp(8px, 2vw, 10px); }
-    .back-wheel { left: clamp(8px, 2vw, 10px); }
-
-    @keyframes drive-across {
-      0% { left: -120px; }
-      100% { left: calc(100% + 120px); }
-    }
-
-    @keyframes spin-wheels {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
+    .home-logo {
+      width: clamp(150px, 50vw, 250px);
+      height: auto;
+      margin: 0 auto clamp(20px, 5vw, 30px);
     }
 
     .about-container {
       display: grid;
       grid-template-columns: 1fr 1.2fr;
-      gap: clamp(20px, 5vw, 50px);
+      gap: clamp(25px, 6vw, 60px);
       align-items: center;
     }
 
     .about-content h3 {
-      font-size: clamp(1.6rem, 4vw, 2.2rem);
+      font-size: clamp(1.8rem, 4.5vw, 2.4rem);
       color: var(--primary-color);
-      margin-bottom: 15px;
+      margin-bottom: 18px;
     }
 
     .about-content p {
-      font-size: clamp(13px, 2vw, 15px);
+      font-size: clamp(14px, 2.2vw, 16px);
     }
 
     .car-animation-container {
       position: relative;
-      min-height: clamp(180px, 40vw, 250px);
-      max-width: 450px;
+      min-height: clamp(200px, 45vw, 280px);
+      max-width: 500px;
       margin: 0 auto;
       background: var(--night-sky);
-      border-radius: 8px;
+      border-radius: 10px;
       border: 1px solid var(--border-color);
       overflow: hidden;
     }
@@ -418,19 +355,96 @@
 
     .moon {
       position: absolute;
-      top: 10px;
-      right: 10px;
-      width: clamp(30px, 8vw, 40px);
-      height: clamp(30px, 8vw, 40px);
+      top: 12px;
+      right: 12px;
+      width: clamp(35px, 9vw, 45px);
+      height: clamp(35px, 9vw, 45px);
       background: #f1f1f1;
       border-radius: 50%;
-      box-shadow: 0 0 15px 5px var(--moon-glow);
+      box-shadow: 0 0 18px 6px var(--moon-glow);
       animation: glow 3s ease-in-out infinite;
     }
 
     @keyframes glow {
-      0%, 100% { box-shadow: 0 0 15px 5px var(--moon-glow); }
-      50% { box-shadow: 0 0 20px 8px var(--moon-glow); }
+      0%, 100% { box-shadow: 0 0 18px 6px var(--moon-glow); }
+      50% { box-shadow: 0 0 24px 10px var(--moon-glow); }
+    }
+
+    .road-and-car {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 30%;
+    }
+
+    .road {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 60px;
+      background: #333;
+      overflow: hidden;
+    }
+
+    .road::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 8px;
+      background: repeating-linear-gradient(90deg, #fff 0, #fff 20px, transparent 20px, transparent 40px);
+      top: 50%;
+      transform: translateY(-50%);
+      animation: moveRoad 0.5s linear infinite;
+    }
+
+    @keyframes moveRoad {
+      0% { transform: translateY(-50%) translateX(0); }
+      100% { transform: translateY(-50%) translateX(-40px); }
+    }
+
+    .animated-car-body {
+      position: absolute;
+      bottom: 60px;
+      left: 20%;
+      width: 120px;
+      height: 40px;
+      background: var(--primary-color);
+      border-radius: 8px 8px 0 0;
+      animation: carMove 0.3s ease-in-out infinite alternate;
+    }
+
+    .animated-car-top {
+      position: absolute;
+      top: -20px;
+      left: 20%;
+      width: 70px;
+      height: 20px;
+      background: var(--primary-color);
+      border-radius: 5px 5px 0 0;
+    }
+
+    .wheel {
+      position: absolute;
+      bottom: -10px;
+      width: 20px;
+      height: 20px;
+      background: #000;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      animation: rotateWheel 0.5s linear infinite;
+    }
+
+    .front-wheel { left: 80px; }
+    .back-wheel { left: 20px; }
+
+    @keyframes carMove {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-2px); }
+    }
+
+    @keyframes rotateWheel {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
     }
 
     #services {
@@ -439,41 +453,41 @@
 
     .services-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(clamp(220px, 30vw, 280px), 1fr));
-      gap: clamp(15px, 3vw, 30px);
+      grid-template-columns: repeat(auto-fit, minmax(clamp(240px, 32vw, 300px), 1fr));
+      gap: clamp(20px, 4vw, 35px);
     }
 
     .service-card {
       background: var(--background-white);
-      padding: clamp(15px, 3vw, 30px);
+      padding: clamp(20px, 4vw, 35px);
       text-align: center;
-      border-radius: 8px;
+      border-radius: 10px;
       border: 1px solid var(--border-color);
       transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
-      min-height: clamp(240px, 35vw, 260px);
+      min-height: clamp(260px, 38vw, 280px);
       display: flex;
       flex-direction: column;
     }
 
     .service-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
       background: #f0f7ff;
     }
 
     .service-icon {
-      font-size: clamp(1.8rem, 5vw, 2.5rem);
+      font-size: clamp(2rem, 6vw, 2.8rem);
       color: var(--primary-color);
-      margin-bottom: clamp(12px, 3vw, 15px);
+      margin-bottom: clamp(15px, 3.5vw, 18px);
     }
 
     .service-card h4 {
-      font-size: clamp(1.1rem, 2.5vw, 1.3rem);
-      margin-bottom: 8px;
+      font-size: clamp(1.2rem, 2.8vw, 1.4rem);
+      margin-bottom: 10px;
     }
 
     .service-card p {
-      font-size: clamp(0.85rem, 2vw, 0.95rem);
+      font-size: clamp(0.9rem, 2.2vw, 1rem);
       flex-grow: 1;
     }
 
@@ -492,35 +506,36 @@
 
     .instagram-cta {
       background: linear-gradient(135deg, #405DE6, #833AB4, #E1306C, #FCAF45);
-      padding: clamp(30px, 8vw, 60px) clamp(15px, 4vw, 30px);
-      border-radius: 12px;
+      padding: clamp(35px, 9vw, 70px) clamp(20px, 5vw, 35px);
+      border-radius: 15px;
       text-align: center;
       color: #fff;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.25);
     }
 
     .instagram-cta i {
-      font-size: clamp(2.5rem, 6vw, 4rem);
-      margin-bottom: clamp(12px, 3vw, 15px);
+      font-size: clamp(3rem, 7vw, 4.5rem);
+      margin-bottom: clamp(15px, 3.5vw, 18px);
       transition: transform 0.3s;
     }
 
     .instagram-cta:hover i {
-      transform: scale(1.1);
+      transform: scale(1.15);
     }
 
     .instagram-cta h3 {
-      font-size: clamp(1.8rem, 4vw, 2.5rem);
+      font-size: clamp(2rem, 4.5vw, 2.8rem);
     }
 
     .instagram-cta p {
-      font-size: clamp(0.9rem, 2vw, 1.1rem);
-      margin-bottom: clamp(15px, 3vw, 25px);
+      font-size: clamp(1rem, 2.2vw, 1.2rem);
+      margin-bottom: clamp(20px, 4vw, 30px);
     }
 
     .instagram-cta .btn {
       background: #fff;
       color: var(--secondary-color);
+      font-size: clamp(14px, 2.2vw, 16px);
     }
 
     #booking {
@@ -537,7 +552,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(135deg, rgba(0, 123, 255, 0.7), rgba(52, 58, 64, 0.7));
+      background: linear-gradient(135deg, rgba(0, 123, 255, 0.75), rgba(52, 58, 64, 0.75));
       z-index: 1;
     }
 
@@ -547,45 +562,45 @@
     }
 
     .contact-wrapper {
-      max-width: clamp(450px, 80vw, 650px);
+      max-width: clamp(500px, 85vw, 700px);
       margin: 0 auto;
-      background: rgba(255, 255, 255, 0.95);
-      padding: clamp(15px, 5vw, 30px);
-      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.97);
+      padding: clamp(20px, 6vw, 35px);
+      border-radius: 15px;
       border: 1px solid var(--border-color);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-      backdrop-filter: blur(5px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+      backdrop-filter: blur(6px);
       position: relative;
       z-index: 2;
     }
 
     .contact-form .form-group {
-      margin-bottom: clamp(12px, 2vw, 15px);
+      margin-bottom: clamp(15px, 2.5vw, 18px);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .contact-form .form-group:hover {
-      transform: scale(1.02);
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transform: scale(1.03);
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
     }
 
     .contact-form input, .contact-form textarea, .contact-form select {
       width: 100%;
-      padding: clamp(8px, 2vw, 12px);
+      padding: clamp(10px, 2.5vw, 14px);
       border: 1px solid var(--border-color);
-      border-radius: 5px;
+      border-radius: 6px;
       font-family: 'Poppins', sans-serif;
-      font-size: clamp(13px, 2vw, 15px);
+      font-size: clamp(14px, 2.2vw, 16px);
       color: var(--text-color);
-      background: rgba(255, 255, 255, 0.8);
+      background: rgba(255, 255, 255, 0.85);
       transition: border-color 0.3s, box-shadow 0.3s, transform 0.2s;
     }
 
     .contact-form input:focus, .contact-form textarea:focus, .contact-form select:focus {
       border-color: var(--primary-color);
-      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+      box-shadow: 0 0 6px rgba(0, 123, 255, 0.6);
       outline: none;
-      transform: scale(1.01);
+      transform: scale(1.02);
     }
 
     .contact-form select {
@@ -604,17 +619,17 @@
     .contact-form .form-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: clamp(12px, 2vw, 15px);
+      gap: clamp(15px, 2.5vw, 18px);
     }
 
     .contact-form button {
       width: 100%;
-      padding: clamp(10px, 2vw, 12px);
+      padding: clamp(12px, 2.5vw, 14px);
       background: var(--whatsapp-color);
       color: #fff;
       border: none;
-      border-radius: 5px;
-      font-size: clamp(0.9rem, 2vw, 1rem);
+      border-radius: 6px;
+      font-size: clamp(1rem, 2.2vw, 1.1rem);
       font-weight: 600;
       transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
       position: relative;
@@ -623,12 +638,12 @@
 
     .contact-form button:hover {
       background: #1eb356;
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transform: translateY(-3px);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
     }
 
     .contact-form button:active {
-      transform: scale(0.98);
+      transform: scale(0.97);
     }
 
     .loading-spinner {
@@ -640,8 +655,8 @@
       border: 4px solid #f3f3f3;
       border-top: 4px solid var(--primary-color);
       border-radius: 50%;
-      width: 24px;
-      height: 24px;
+      width: 28px;
+      height: 28px;
       animation: spin 1s linear infinite;
     }
 
@@ -672,7 +687,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(135deg, rgba(0, 123, 255, 0.7), rgba(52, 58, 64, 0.7));
+      background: linear-gradient(135deg, rgba(0, 123, 255, 0.75), rgba(52, 58, 64, 0.75));
       z-index: 1;
     }
 
@@ -682,32 +697,32 @@
     }
 
     .map-container {
-      margin-top: clamp(25px, 5vw, 50px);
-      border-radius: 12px;
+      margin-top: clamp(30px, 6vw, 60px);
+      border-radius: 15px;
       overflow: hidden;
       border: 3px solid var(--primary-color);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
       position: relative;
-      height: clamp(250px, 50vw, 400px);
+      height: clamp(280px, 55vw, 450px);
       transition: transform 0.3s, box-shadow 0.3s;
     }
 
     .map-container:hover {
-      transform: scale(1.02);
-      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+      transform: scale(1.03);
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.35);
     }
 
     .map-container::before {
       content: '';
       position: absolute;
-      top: -10px;
-      left: -10px;
-      right: -10px;
-      bottom: -10px;
+      top: -12px;
+      left: -12px;
+      right: -12px;
+      bottom: -12px;
       border: 2px dashed var(--primary-color);
-      border-radius: 16px;
+      border-radius: 18px;
       z-index: -1;
-      opacity: 0.3;
+      opacity: 0.35;
     }
 
     .map-container iframe {
@@ -754,26 +769,26 @@
     footer {
       background: var(--secondary-color);
       color: var(--dark-text);
-      padding: clamp(30px, 8vw, 50px) 0 clamp(15px, 4vw, 25px);
+      padding: clamp(35px, 9vw, 60px) 0 clamp(20px, 5vw, 30px);
     }
 
     .footer-grid {
       display: grid;
       grid-template-columns: 1fr 1.5fr;
-      gap: clamp(15px, 4vw, 30px);
-      margin-bottom: clamp(15px, 4vw, 30px);
+      gap: clamp(20px, 5vw, 35px);
+      margin-bottom: clamp(20px, 5vw, 35px);
     }
 
     .footer-col h4 {
       color: var(--dark-heading);
-      margin-bottom: clamp(12px, 3vw, 15px);
-      font-size: clamp(0.9rem, 2vw, 1.1rem);
+      margin-bottom: clamp(15px, 3.5vw, 18px);
+      font-size: clamp(1rem, 2.2vw, 1.2rem);
     }
 
     .footer-col p, .footer-col a, .footer-col li {
       color: var(--dark-text);
       text-decoration: none;
-      font-size: clamp(0.85rem, 2vw, 0.95rem);
+      font-size: clamp(0.9rem, 2.2vw, 1rem);
       transition: color 0.3s;
     }
 
@@ -786,48 +801,48 @@
     }
 
     .footer-col li {
-      margin-bottom: clamp(6px, 2vw, 8px);
+      margin-bottom: clamp(8px, 2.5vw, 10px);
       display: flex;
       align-items: flex-start;
     }
 
     .footer-col i {
-      margin-right: 8px;
-      width: 18px;
+      margin-right: 10px;
+      width: 20px;
       color: var(--primary-color);
-      margin-top: 4px;
+      margin-top: 5px;
     }
 
     .footer-social {
-      margin-top: clamp(12px, 3vw, 15px);
+      margin-top: clamp(15px, 3.5vw, 18px);
     }
 
     .footer-social a {
-      font-size: clamp(1.1rem, 2.5vw, 1.4rem);
-      margin-right: clamp(8px, 2vw, 12px);
+      font-size: clamp(1.2rem, 3vw, 1.5rem);
+      margin-right: clamp(10px, 2.5vw, 15px);
     }
 
     .footer-bottom {
       text-align: center;
-      padding-top: clamp(15px, 4vw, 25px);
+      padding-top: clamp(20px, 5vw, 30px);
       border-top: 1px solid var(--dark-border);
-      font-size: clamp(0.75rem, 1.5vw, 0.85rem);
+      font-size: clamp(0.8rem, 1.8vw, 0.9rem);
     }
 
     .scroll-to-top {
       position: fixed;
-      bottom: clamp(15px, 4vw, 25px);
-      left: clamp(15px, 4vw, 25px);
-      width: clamp(35px, 8vw, 45px);
-      height: clamp(35px, 8vw, 45px);
+      bottom: clamp(20px, 5vw, 30px);
+      left: clamp(20px, 5vw, 30px);
+      width: clamp(40px, 9vw, 50px);
+      height: clamp(40px, 9vw, 50px);
       background: var(--primary-color);
       color: #fff;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: clamp(18px, 4vw, 22px);
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      font-size: clamp(20px, 4.5vw, 24px);
+      box-shadow: 0 3px 8px rgba(0,0,0,0.25);
       z-index: 100;
       opacity: 0;
       visibility: hidden;
@@ -836,7 +851,7 @@
 
     .scroll-to-top:hover {
       background: #0056b3;
-      transform: translateY(-3px);
+      transform: translateY(-4px);
     }
 
     .scroll-to-top.show {
@@ -846,39 +861,39 @@
 
     .chat-launcher {
       position: fixed;
-      bottom: clamp(15px, 4vw, 25px);
-      right: clamp(15px, 4vw, 25px);
-      width: clamp(45px, 10vw, 55px);
-      height: clamp(45px, 10vw, 55px);
+      bottom: clamp(20px, 5vw, 30px);
+      right: clamp(20px, 5vw, 30px);
+      width: clamp(50px, 11vw, 60px);
+      height: clamp(50px, 11vw, 60px);
       background: var(--primary-color);
       color: #fff;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: clamp(22px, 5vw, 28px);
-      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      font-size: clamp(24px, 5.5vw, 30px);
+      box-shadow: 0 3px 8px rgba(0,0,0,0.35);
       z-index: 101;
       transition: transform 0.3s;
     }
 
     .chat-launcher:hover {
-      transform: scale(1.1);
+      transform: scale(1.15);
     }
 
     .chat-widget {
       position: fixed;
-      bottom: clamp(70px, 15vw, 90px);
-      right: clamp(15px, 4vw, 25px);
-      width: clamp(260px, 80vw, 320px);
-      max-width: calc(100% - 30px);
+      bottom: clamp(80px, 16vw, 100px);
+      right: clamp(20px, 5vw, 30px);
+      width: clamp(280px, 85vw, 340px);
+      max-width: calc(100% - 40px);
       background: var(--background-white);
-      border-radius: 12px;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
       z-index: 100;
       opacity: 0;
       visibility: hidden;
-      transform: translateY(20px);
+      transform: translateY(25px);
       transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
     }
 
@@ -891,63 +906,65 @@
     .chat-widget-header {
       background: var(--primary-color);
       color: #fff;
-      padding: clamp(8px, 2vw, 12px) clamp(12px, 3vw, 15px);
+      padding: clamp(10px, 2.5vw, 14px) clamp(15px, 3.5vw, 18px);
       display: flex;
       justify-content: space-between;
       align-items: center;
+      border-radius: 15px 15px 0 0;
     }
 
     .chat-widget-header h4 {
       margin: 0;
-      font-size: clamp(0.9rem, 2vw, 1rem);
+      font-size: clamp(1rem, 2.2vw, 1.1rem);
     }
 
     .chat-widget-header .close-btn {
       background: none;
       border: none;
       color: #fff;
-      font-size: clamp(18px, 4vw, 22px);
+      font-size: clamp(20px, 4.5vw, 24px);
       cursor: pointer;
     }
 
     .chat-widget-body {
-      padding: clamp(12px, 3vw, 20px) clamp(12px, 3vw, 15px);
+      padding: clamp(15px, 3.5vw, 25px) clamp(15px, 3.5vw, 18px);
       text-align: center;
     }
 
     .chat-widget-body .icon {
-      font-size: clamp(1.8rem, 5vw, 2.5rem);
+      font-size: clamp(2rem, 5.5vw, 2.8rem);
       color: var(--primary-color);
-      margin-bottom: clamp(8px, 2vw, 12px);
+      margin-bottom: clamp(10px, 2.5vw, 15px);
     }
 
     .chat-widget-body h5 {
-      font-size: clamp(0.9rem, 2vw, 1.1rem);
-      margin-bottom: clamp(6px, 2vw, 8px);
+      font-size: clamp(1rem, 2.2vw, 1.2rem);
+      margin-bottom: clamp(8px, 2.5vw, 10px);
     }
 
     .chat-widget-body p {
-      font-size: clamp(0.8rem, 1.5vw, 0.9rem);
-      margin-bottom: clamp(12px, 3vw, 20px);
+      font-size: clamp(0.9rem, 1.8vw, 1rem);
+      margin-bottom: clamp(15px, 3.5vw, 25px);
     }
 
     .chat-widget-body .btn-chat {
       background: var(--whatsapp-color);
       width: 100%;
-      padding: clamp(8px, 2vw, 10px);
+      padding: clamp(10px, 2.5vw, 12px);
+      margin-bottom: 10px;
     }
 
     @media (max-width: 992px) {
       .about-container {
         grid-template-columns: 1fr;
-        gap: clamp(15px, 4vw, 25px);
+        gap: clamp(20px, 5vw, 30px);
         text-align: center;
       }
 
       .car-animation-container {
         margin: 0 auto;
-        max-width: 400px;
-        min-height: clamp(150px, 35vw, 200px);
+        max-width: 450px;
+        min-height: clamp(180px, 40vw, 240px);
       }
     }
 
@@ -960,8 +977,8 @@
         left: 0;
         width: 100%;
         background: var(--background-white);
-        padding: clamp(12px, 3vw, 15px) 0;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        padding: clamp(15px, 3.5vw, 18px) 0;
+        box-shadow: 0 6px 12px rgba(0,0,0,0.15);
       }
 
       .nav-menu.active {
@@ -974,17 +991,17 @@
       }
 
       .nav-links li {
-        margin: clamp(6px, 2vw, 8px) 0;
+        margin: clamp(8px, 2.5vw, 10px) 0;
       }
 
       .nav-social {
-        margin-top: clamp(12px, 3vw, 15px);
-        padding-top: clamp(12px, 3vw, 15px);
+        margin-top: clamp(15px, 3.5vw, 18px);
+        padding-top: clamp(15px, 3.5vw, 18px);
         border-top: 1px solid var(--border-color);
       }
 
       .nav-social a {
-        margin: 0 clamp(6px, 2vw, 8px);
+        margin: 0 clamp(8px, 2.5vw, 10px);
       }
 
       .nav-toggle {
@@ -1010,11 +1027,11 @@
       }
 
       .navbar-brand {
-        font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+        font-size: clamp(1.2rem, 3vw, 1.5rem);
       }
 
       .section-title h2 {
-        font-size: clamp(1.6rem, 4vw, 2rem);
+        font-size: clamp(1.8rem, 4.5vw, 2.2rem);
       }
 
       .services-grid {
@@ -1022,61 +1039,24 @@
       }
 
       .chat-widget {
-        width: clamp(240px, 90vw, 280px);
+        width: clamp(260px, 92vw, 300px);
       }
 
-      .hero-animation {
-        width: clamp(180px, 85vw, 280px);
-        height: clamp(80px, 20vw, 100px);
+      .home-logo {
+        width: clamp(120px, 60vw, 200px);
       }
 
       .car-animation-container {
-        width: clamp(180px, 85vw, 280px);
-        min-height: clamp(120px, 30vw, 160px);
+        width: clamp(200px, 90vw, 300px);
+        min-height: clamp(140px, 35vw, 180px);
       }
-
-      .road-and-car {
-        height: clamp(60px, 15vw, 80px);
-      }
-
-      .road {
-        bottom: 10px;
-        height: 4px;
-        background-size: 12px 4px;
-      }
-
-      .animated-car-body {
-        bottom: 14px;
-        left: -100px;
-        width: clamp(60px, 18vw, 80px);
-        height: clamp(25px, 7vw, 30px);
-        animation: drive-across 4s linear infinite;
-      }
-
-      .animated-car-top {
-        top: -12px;
-        left: clamp(12px, 3vw, 15px);
-        width: clamp(40px, 10vw, 50px);
-        height: clamp(15px, 4vw, 20px);
-      }
-
-      .wheel {
-        bottom: -6px;
-        width: clamp(14px, 4vw, 18px);
-        height: clamp(14px, 4vw, 18px);
-        border: 2px solid #fff;
-        animation: spin-wheels 0.3s linear infinite;
-      }
-
-      .front-wheel { right: clamp(6px, 1.5vw, 8px); }
-      .back-wheel { left: clamp(6px, 1.5vw, 8px); }
 
       .moon {
-        width: clamp(20px, 6vw, 25px);
-        height: clamp(20px, 6vw, 25px);
-        top: 8px;
-        right: 8px;
-        box-shadow: 0 0 10px 3px var(--moon-glow);
+        width: clamp(25px, 7vw, 30px);
+        height: clamp(25px, 7vw, 30px);
+        top: 10px;
+        right: 10px;
+        box-shadow: 0 0 12px 4px var(--moon-glow);
       }
 
       .star:nth-child(1) { width: 1.5px; height: 1.5px; }
@@ -1099,7 +1079,7 @@
     "image": "images/og-image.jpg",
     "@id": "https://www.your-ozon-website.com/",
     "url": "https://www.your-ozon-website.com/",
-    "telephone": "+91-9447405746",
+    "telephone": "+91-9846135714, +91-9447405746",
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
@@ -1142,7 +1122,7 @@
         </ul>
         <div class="nav-social">
           <a href="https://www.instagram.com/ozon_detailing_/" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://wa.me/919447405746" aria-label="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://wa.me/919846135714" aria-label="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
           <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
         </div>
       </div>
@@ -1153,16 +1133,7 @@
   <section id="home" class="section">
     <div class="container">
       <div class="home-content">
-        <div class="hero-animation">
-          <div class="road-and-car">
-            <div class="road"></div>
-            <div class="animated-car-body">
-              <div class="animated-car-top"></div>
-              <div class="wheel front-wheel"></div>
-              <div class="wheel back-wheel"></div>
-            </div>
-          </div>
-        </div>
+        <img src="images/icon.png" alt="Ozon Detailing Logo" class="home-logo" loading="lazy">
         <h1>Welcome to OZON DETAILING & CAR WASH</h1>
         <p>The ultimate destination for vehicle care. We bring your car back to its showroom glory.</p>
         <a href="#booking" class="btn">Book an Appointment</a>
@@ -1196,7 +1167,7 @@
         </div>
       </div>
       <div class="about-content">
-        <h3>About OZON DETAILING & CAR WAH </h3>
+        <h3>About OZON DETAILING & CAR WASH</h3>
         <p><strong>Welcome to OZON DETAILING AND CAR WASH, where passion for cars meets precision and care.</strong> Founded on the principle that every vehicle deserves to look its absolute best, we have become a trusted name for discerning car and bike owners.</p>
         <p>Our mission is simple: to provide an unparalleled detailing experience that restores, protects, and enhances your vehicle's appearance. We use only industry-leading products and the latest techniques, from meticulous hand washes to advanced ceramic coatings.</p>
       </div>
@@ -1208,32 +1179,32 @@
       <div class="section-title"><h2>Our Services</h2></div>
       <div class="services-grid">
         <div class="service-card">
-          <div class="service-icon"><i class="fas fa-soap"></i></div>
+          <div class="service-icon"><i class="fas fa-water"></i></div>
           <h4>Body Wash</h4>
           <p>Thorough exterior cleaning for a spotless shine.</p>
         </div>
         <div class="service-card">
-          <div class="service-icon"><i class="fas fa-spray-can"></i></div>
+          <div class="service-icon"><i class="fas fa-water"></i></div>
           <h4>Normal Wash</h4>
           <p>Standard wash for everyday cleaning needs.</p>
         </div>
         <div class="service-card">
-          <div class="service-icon"><i class="fas fa-spray-can"></i></div>
+          <div class="service-icon"><i class="fas fa-water"></i></div>
           <h4>Full Wash</h4>
           <p>Comprehensive cleaning for both exterior and interior.</p>
         </div>
         <div class="service-card">
-          <div class="service-icon"><i class="fas fa-spray-can"></i></div>
+          <div class="service-icon"><i class="fas fa-water"></i></div>
           <h4>Premium Wash</h4>
           <p>Luxury wash with premium products for a superior shine.</p>
         </div>
         <div class="service-card">
-          <div class="service-icon"><i class="fas fa-spray-can"></i></div>
+          <div class="service-icon"><i class="fas fa-water"></i></div>
           <h4>Severe Car Wash</h4>
           <p>Intensive cleaning for heavily soiled vehicles, restoring shine.</p>
         </div>
         <div class="service-card">
-          <div class="service-icon"><i class="fas fa-spray-can"></i></div>
+          <div class="service-icon"><i class="fas fa-water"></i></div>
           <h4>Detailing Wash</h4>
           <p>Precision wash with detailed attention to every surface.</p>
         </div>
@@ -1293,7 +1264,7 @@
           <p>Comprehensive detailing with paint correction and polishing.</p>
         </div>
         <div class="service-card">
-          <div class="service-icon"><i class="fas fa-soap"></i></div>
+          <div class="service-icon"><i class="fas fa-water"></i></div>
           <h4>Foam Wash</h4>
           <p>Gentle foam cannon wash for a spotless exterior.</p>
         </div>
@@ -1369,10 +1340,10 @@
             <select id="booking-service" required>
               <option value="" disabled selected>Select a Service</option>
               <option value="Body Wash">Body Wash</option>
-              <option value="Normal Wash">Normal Wash - Standard wash for everyday cleaning needs</option>
-              <option value="Full Wash">Full Wash - Comprehensive cleaning for both exterior and interior</option>
-              <option value="Premium Wash">Premium Wash - Luxury wash with premium products for a superior shine</option>
-              <option value="Severe Car Wash">Severe Car Wash - Intensive cleaning for heavily soiled vehicles, restoring shine</option>
+              <option value="Normal Wash">Normal Wash</option>
+              <option value="Full Wash">Full Wash</option>
+              <option value="Premium Wash">Premium Wash</option>
+              <option value="Severe Car Wash">Severe Car Wash</option>
               <option value="Detailing Wash">Detailing Wash</option>
               <option value="Nil Under Body Wash">Nil Under Body Wash</option>
               <option value="Ceramic Wash">Ceramic Wash</option>
@@ -1396,6 +1367,13 @@
             </select>
           </div>
           <div class="form-group"><textarea id="booking-message" rows="3" placeholder="Additional details or specific vehicle info..."></textarea></div>
+          <div class="form-group">
+            <select id="booking-contact-number" required>
+              <option value="" disabled selected>Select Contact Number</option>
+              <option value="919846135714">+91 98461 35714</option>
+              <option value="919447405746">+91 94474 05746</option>
+            </select>
+          </div>
           <button type="submit" class="btn"><i class="fab fa-whatsapp"></i> <span>Request Appointment</span> <div class="loading-spinner"></div></button>
         </form>
       </div>
@@ -1422,7 +1400,14 @@
           <div class="form-group"><input type="text" id="name" placeholder="Your Name" required></div>
           <div class="form-group"><input type="tel" id="phone" placeholder="Your Phone Number (Optional)"></div>
           <div class="form-group"><textarea id="message" rows="5" placeholder="Your Inquiry or Feedback..." required></textarea></div>
-          <button type="submit" class="btn"><i class="fab fa-whatsapp"></i> Send via WhatsApp</button>
+          <div class="form-group">
+            <select id="feedback-contact-number" required>
+              <option value="" disabled selected>Select Contact Number</option>
+              <option value="919846135714">+91 98461 35714</option>
+              <option value="919447405746">+91 94474 05746</option>
+            </select>
+          </div>
+          <button type="submit" class="btn"><i class="fab fa-whatsapp"></i> <span>Send via WhatsApp</span> <div class="loading-spinner"></div></button>
         </form>
       </div>
       <div class="map-container">
@@ -1447,12 +1432,13 @@
           <h4>Contact & Location</h4>
           <ul>
             <li><i class="fas fa-map-marker-alt"></i><span>OZON DETAILING & CAR WASH<br>Kolathakkara, Manipuram<br>Puthoor (PO), Omassery 673582</span></li>
-            <li><i class="fas fa-phone"></i><a href="tel:+919447405746">+91-9447405746</a></li>
+            <li><i class="fas fa-phone"></i><a href="tel:+919846135714">+91-9846135714</a> | <a href="tel:+919447405746">+91-9447405746</a></li>
             <li><i class="fas fa-envelope"></i><a href="mailto:contact@ozondetailing.com">contact@ozondetailing.com</a></li>
             <li><i class="fas fa-clock"></i><span>Mon-Sat: 8:00 AM - 9:00 PM<br>Sun: 8:00 AM - 5:00 PM</span></li>
           </ul>
           <div class="footer-social">
             <a href="https://www.instagram.com/ozon_detailing_/" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/919846135714" aria-label="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
             <a href="https://wa.me/919447405746" aria-label="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
           </div>
         </div>
@@ -1474,14 +1460,15 @@
     <div class="chat-widget-body">
       <div class="icon"><i class="fas fa-car-side"></i></div>
       <h5>Welcome to Ozon Detailing & Car Wash!</h5>
-      <p>Have a question? We're here to help. Tap below to chat with us on WhatsApp.</p>
-      <a href="https://wa.me/919447405746?text=Hello%20Ozon%20Detailing!" class="btn btn-chat" target="_blank"><i class="fab fa-whatsapp"></i> Chat Now</a>
+      <p>Have a question? We're here to help. Choose a number to chat on WhatsApp:</p>
+      <a href="https://wa.me/919846135714?text=Hello%20Ozon%20Detailing!" class="btn btn-chat" target="_blank"><i class="fab fa-whatsapp"></i> Chat on +91 98461 35714</a>
+      <a href="https://wa.me/919447405746?text=Hello%20Ozon%20Detailing!" class="btn btn-chat" target="_blank"><i class="fab fa-whatsapp"></i> Chat on +91 94474 05746</a>
     </div>
   </div>
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      const WHATSAPP_NUMBER = '919447405746';
+      const WHATSAPP_NUMBERS = ['919846135714', '919447405746'];
       const navToggle = document.getElementById('nav-toggle');
       const navMenu = document.getElementById('nav-menu');
       const themeToggle = document.getElementById('theme-toggle');
@@ -1490,14 +1477,17 @@
       const chatWidget = document.getElementById('chat-widget');
       const chatCloseBtn = document.getElementById('chat-close-btn');
 
+      // Navigation toggle for mobile
       navToggle.addEventListener('click', () => navMenu.classList.toggle('active'));
 
+      // Close mobile menu when clicking a nav link
       document.querySelectorAll('.nav-links a[href^="#"]').forEach(link => {
         link.addEventListener('click', () => {
           if (window.innerWidth <= 768) navMenu.classList.remove('active');
         });
       });
 
+      // Active nav link on scroll
       window.addEventListener('scroll', () => {
         let current = '';
         document.querySelectorAll('section, footer').forEach(section => {
@@ -1511,6 +1501,7 @@
         scrollToTopBtn.classList.toggle('show', window.scrollY > 300);
       });
 
+      // Fade-in animation for sections
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
@@ -1522,6 +1513,7 @@
 
       document.querySelectorAll('.fade-in-section').forEach(fader => observer.observe(fader));
 
+      // Theme toggle
       themeToggle.addEventListener('click', () => {
         document.documentElement.dataset.theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
         themeToggle.innerHTML = `<i class="fas fa-${document.documentElement.dataset.theme === 'dark' ? 'sun' : 'moon'}"></i>`;
@@ -1533,38 +1525,78 @@
         themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
       }
 
+      // Simulated Firebase storage using localStorage (since Firebase JS is excluded)
+      const saveToLocalStorage = (key, data) => {
+        let storedData = JSON.parse(localStorage.getItem(key)) || [];
+        storedData.push(data);
+        localStorage.setItem(key, JSON.stringify(storedData));
+      };
+
+      // Booking form submission
       document.getElementById('booking-form').addEventListener('submit', e => {
         e.preventDefault();
         const submitButton = e.target.querySelector('button');
         submitButton.classList.add('loading');
         submitButton.disabled = true;
 
+        const name = document.getElementById('booking-name').value;
+        const phone = document.getElementById('booking-phone').value;
+        const date = document.getElementById('booking-date').value;
+        const time = document.getElementById('booking-time').value;
+        const service = document.getElementById('booking-service').value;
+        const message = document.getElementById('booking-message').value;
+        const contactNumber = document.getElementById('booking-contact-number').value;
+
+        // Simulate Firebase Realtime Database storage
+        const bookingData = { name, phone, date, time, service, message, timestamp: new Date().toISOString() };
+        saveToLocalStorage('bookings', bookingData);
+
+        // Firebase integration placeholder (not included as per request)
+        // Example: firebase.database().ref('bookings').push(bookingData);
+
         setTimeout(() => {
-          const name = document.getElementById('booking-name').value;
-          const phone = document.getElementById('booking-phone').value;
-          const date = document.getElementById('booking-date').value;
-          const time = document.getElementById('booking-time').value;
-          const service = document.getElementById('booking-service').value;
-          const message = document.getElementById('booking-message').value;
           let text = `*Appointment Request*\nName: ${name}\nPhone: ${phone}\nDate: ${date}\nTime: ${time}\nService: ${service}`;
           if (message) text += `\nDetails: ${message}`;
-          window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`, '_blank');
+          window.open(`https://wa.me/${contactNumber}?text=${encodeURIComponent(text)}`, '_blank');
           submitButton.classList.remove('loading');
           submitButton.disabled = false;
+          e.target.reset();
+          alert('Appointment request sent successfully!');
         }, 2000);
       });
 
+      // Feedback form submission
       document.getElementById('whatsapp-form').addEventListener('submit', e => {
         e.preventDefault();
+        const submitButton = e.target.querySelector('button');
+        submitButton.classList.add('loading');
+        submitButton.disabled = true;
+
         const name = document.getElementById('name').value;
         const phone = document.getElementById('phone').value;
         const message = document.getElementById('message').value;
-        let text = `*Feedback/Inquiry*\nName: ${name}`;
-        if (phone) text += `\nPhone: ${phone}`;
-        text += `\nMessage: ${message}`;
-        window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`, '_blank');
+        const contactNumber = document.getElementById('feedback-contact-number').value;
+
+        // Simulate Firebase Realtime Database storage
+        const feedbackData = { name, phone, message, timestamp: new Date().toISOString() };
+        saveToLocalStorage('feedback', feedbackData);
+
+        // Firebase integration placeholder (not included as per request)
+        // Example: firebase.database().ref('feedback').push(feedbackData);
+
+        setTimeout(() => {
+          let text = `*Feedback/Inquiry*\nName: ${name}`;
+          if (phone) text += `\nPhone: ${phone}`;
+          text += `\nMessage: ${message}`;
+          window.open(`https://wa.me/${contactNumber}?text=${encodeURIComponent(text)}`, '_blank');
+          submitButton.classList.remove('loading');
+          submitButton.disabled = false;
+          e.target.reset();
+          alert('Feedback sent successfully!');
+        }, 2000);
       });
 
+      // Chat widget toggle
       chatLauncher.addEventListener('click', () => chatWidget.classList.toggle('show'));
       chatCloseBtn.addEventListener('click', () => chatWidget.classList.remove('show'));
     });
