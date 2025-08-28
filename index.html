@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ozon Detailing & Car Wash </title>
+  <title>Ozon Detailing & Car Wash | Premium Auto Care</title>
   <meta name="description" content="Ozon Detailing offers premium car and bike detailing, ceramic coating, underbody coating, painting, accessories, and interior cleaning services. Discover perfection for your vehicle.">
-  <meta name="keywords" content="car detailing, car wash, bike detailing, ceramic coating, car accessories, foam wash, auto detailing, Ozon Detailing, car ceramic coating, premium car wash, paint protection film, headlight restoration, underbody coating, custom painting, graphene coating, borophane coating, window tinting, car tinting, tyre dressing, normal wash, full wash, premium wash, severe car wash">
+  <meta name="keywords" content="car detailing, car wash, bike detailing, ceramic coating, car accessories, foam wash, auto detailing, Ozon Detailing, car ceramic coating, premium car wash, paint protection film, headlight restoration, underbody coating, custom painting, graphene coating, borophane coating, window tinting, car tinting, tyre dressing, normal wash, full wash, premium wash, severe car wash, detailing wash">
   <meta name="author" content="Ozon Detailing">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#007bff">
@@ -42,6 +42,7 @@
       --night-sky: #0a1d37;
       --star-color: #ffffff;
       --moon-glow: #e6f0fa;
+      --particle-color: rgba(255, 255, 255, 0.7);
     }
 
     [data-theme="dark"] {
@@ -53,6 +54,7 @@
       --secondary-color: var(--dark-secondary);
       --night-sky: #1c2526;
       --moon-glow: #b0c4de;
+      --particle-color: rgba(200, 200, 200, 0.7);
     }
 
     * {
@@ -87,6 +89,7 @@
 
     .section {
       padding: clamp(50px, 10vw, 80px) 0;
+      position: relative;
     }
 
     .section-title {
@@ -520,25 +523,50 @@
       color: var(--secondary-color);
     }
 
-    #contact, #booking {
-      background: var(--background-light);
+    #booking {
+      background: url('images/shop-bg.jpg') no-repeat center center/cover;
+      background-attachment: fixed;
+      position: relative;
+      overflow: hidden;
     }
 
-    #booking {
-      background: var(--background-white);
+    #booking::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba(0, 123, 255, 0.7), rgba(52, 58, 64, 0.7));
+      z-index: 1;
+    }
+
+    #booking .container {
+      position: relative;
+      z-index: 2;
     }
 
     .contact-wrapper {
       max-width: clamp(450px, 80vw, 650px);
       margin: 0 auto;
-      background: var(--background-white);
+      background: rgba(255, 255, 255, 0.95);
       padding: clamp(15px, 5vw, 30px);
-      border-radius: 8px;
+      border-radius: 12px;
       border: 1px solid var(--border-color);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      position: relative;
+      z-index: 2;
     }
 
     .contact-form .form-group {
       margin-bottom: clamp(12px, 2vw, 15px);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .contact-form .form-group:hover {
+      transform: scale(1.02);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
 
     .contact-form input, .contact-form textarea, .contact-form select {
@@ -549,6 +577,15 @@
       font-family: 'Poppins', sans-serif;
       font-size: clamp(13px, 2vw, 15px);
       color: var(--text-color);
+      background: rgba(255, 255, 255, 0.8);
+      transition: border-color 0.3s, box-shadow 0.3s, transform 0.2s;
+    }
+
+    .contact-form input:focus, .contact-form textarea:focus, .contact-form select:focus {
+      border-color: var(--primary-color);
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+      outline: none;
+      transform: scale(1.01);
     }
 
     .contact-form select {
@@ -579,20 +616,139 @@
       border-radius: 5px;
       font-size: clamp(0.9rem, 2vw, 1rem);
       font-weight: 600;
+      transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contact-form button:hover {
+      background: #1eb356;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .contact-form button:active {
+      transform: scale(0.98);
+    }
+
+    .loading-spinner {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 4px solid #f3f3f3;
+      border-top: 4px solid var(--primary-color);
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      animation: spin 1s linear infinite;
+    }
+
+    .contact-form button.loading .loading-spinner {
+      display: block;
+    }
+
+    .contact-form button.loading span, .contact-form button.loading i {
+      opacity: 0;
+    }
+
+    @keyframes spin {
+      0% { transform: translate(-50%, -50%) rotate(0deg); }
+      100% { transform: translate(-50%, -50%) rotate(360deg); }
+    }
+
+    #contact {
+      background: url('images/shop-bg.jpg') no-repeat center center/cover;
+      background-attachment: fixed;
+      position: relative;
+      overflow: hidden;
+    }
+
+    #contact::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba(0, 123, 255, 0.7), rgba(52, 58, 64, 0.7));
+      z-index: 1;
+    }
+
+    #contact .container {
+      position: relative;
+      z-index: 2;
     }
 
     .map-container {
       margin-top: clamp(25px, 5vw, 50px);
-      border-radius: 8px;
+      border-radius: 12px;
       overflow: hidden;
-      border: 1px solid var(--border-color);
+      border: 3px solid var(--primary-color);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      position: relative;
       height: clamp(250px, 50vw, 400px);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .map-container:hover {
+      transform: scale(1.02);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    }
+
+    .map-container::before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      right: -10px;
+      bottom: -10px;
+      border: 2px dashed var(--primary-color);
+      border-radius: 16px;
+      z-index: -1;
+      opacity: 0.3;
     }
 
     .map-container iframe {
       width: 100%;
       height: 100%;
       border: 0;
+    }
+
+    .particles {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .particle {
+      position: absolute;
+      background: var(--particle-color);
+      border-radius: 50%;
+      animation: float 10s infinite linear;
+      opacity: 0.5;
+    }
+
+    .particle:nth-child(1) { width: 4px; height: 4px; top: 10%; left: 10%; animation-duration: 12s; }
+    .particle:nth-child(2) { width: 3px; height: 3px; top: 20%; left: 30%; animation-duration: 15s; animation-delay: 1s; }
+    .particle:nth-child(3) { width: 5px; height: 5px; top: 30%; left: 50%; animation-duration: 10s; animation-delay: 2s; }
+    .particle:nth-child(4) { width: 2px; height: 2px; top: 40%; left: 70%; animation-duration: 13s; animation-delay: 3s; }
+    .particle:nth-child(5) { width: 4px; height: 4px; top: 50%; left: 20%; animation-duration: 11s; animation-delay: 4s; }
+    .particle:nth-child(6) { width: 3px; height: 3px; top: 60%; left: 40%; animation-duration: 14s; animation-delay: 5s; }
+    .particle:nth-child(7) { width: 5px; height: 5px; top: 70%; left: 60%; animation-duration: 12s; animation-delay: 6s; }
+    .particle:nth-child(8) { width: 2px; height: 2px; top: 80%; left: 15%; animation-duration: 16s; animation-delay: 7s; }
+    .particle:nth-child(9) { width: 4px; height: 4px; top: 90%; left: 35%; animation-duration: 10s; animation-delay: 8s; }
+    .particle:nth-child(10) { width: 3px; height: 3px; top: 25%; left: 55%; animation-duration: 13s; animation-delay: 9s; }
+
+    @keyframes float {
+      0% { transform: translate(0, 0); opacity: 0.5; }
+      50% { opacity: 0.8; }
+      100% { transform: translate(50px, -50px); opacity: 0.5; }
     }
 
     footer {
@@ -1057,24 +1213,29 @@
           <p>Thorough exterior cleaning for a spotless shine.</p>
         </div>
         <div class="service-card">
-          <div class="service-icon"><i class="fas fa-shower"></i></div>
+          <div class="service-icon"><i class="fas fa-spray-can"></i></div>
           <h4>Normal Wash</h4>
           <p>Standard wash for everyday cleaning needs.</p>
         </div>
         <div class="service-card">
-          <div class="service-icon"><i class="fas fa-shower"></i></div>
+          <div class="service-icon"><i class="fas fa-spray-can"></i></div>
           <h4>Full Wash</h4>
           <p>Comprehensive cleaning for both exterior and interior.</p>
         </div>
         <div class="service-card">
-          <div class="service-icon"><i class="fas fa-shower"></i></div>
+          <div class="service-icon"><i class="fas fa-spray-can"></i></div>
           <h4>Premium Wash</h4>
           <p>Luxury wash with premium products for a superior shine.</p>
         </div>
         <div class="service-card">
-          <div class="service-icon"><i class="fas fa-shower"></i></div>
+          <div class="service-icon"><i class="fas fa-spray-can"></i></div>
           <h4>Severe Car Wash</h4>
           <p>Intensive cleaning for heavily soiled vehicles, restoring shine.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-spray-can"></i></div>
+          <h4>Detailing Wash</h4>
+          <p>Precision wash with detailed attention to every surface.</p>
         </div>
         <div class="service-card">
           <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
@@ -1137,9 +1298,9 @@
           <p>Gentle foam cannon wash for a spotless exterior.</p>
         </div>
         <div class="service-card">
-          <div class="service-icon"><i class="fas fa-couch"></i></div>
-          <h4>Interior Cleaning</h4>
-          <p>Deep cleaning of all interior surfaces for a fresh cabin.</p>
+          <div class="service-icon"><i class="fas fa-spray-can"></i></div>
+          <h4>Interior Detailing</h4>
+          <p>Thorough detailing of all interior surfaces for a pristine cabin.</p>
         </div>
         <div class="service-card">
           <div class="service-icon"><i class="fas fa-spray-can"></i></div>
@@ -1182,6 +1343,18 @@
   </section>
 
   <section id="booking" class="section fade-in-section">
+    <div class="particles">
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+    </div>
     <div class="container">
       <div class="section-title"><h2>Book an Appointment</h2></div>
       <div class="contact-wrapper">
@@ -1196,10 +1369,11 @@
             <select id="booking-service" required>
               <option value="" disabled selected>Select a Service</option>
               <option value="Body Wash">Body Wash</option>
-              <option value="Normal Wash">Normal Wash</option>
-              <option value="Full Wash">Full Wash</option>
-              <option value="Premium Wash">Premium Wash</option>
-              <option value="Severe Car Wash">Severe Car Wash</option>
+              <option value="Normal Wash">Normal Wash - Standard wash for everyday cleaning needs</option>
+              <option value="Full Wash">Full Wash - Comprehensive cleaning for both exterior and interior</option>
+              <option value="Premium Wash">Premium Wash - Luxury wash with premium products for a superior shine</option>
+              <option value="Severe Car Wash">Severe Car Wash - Intensive cleaning for heavily soiled vehicles, restoring shine</option>
+              <option value="Detailing Wash">Detailing Wash</option>
               <option value="Nil Under Body Wash">Nil Under Body Wash</option>
               <option value="Ceramic Wash">Ceramic Wash</option>
               <option value="Engine Steam Wash">Engine Steam Wash</option>
@@ -1212,7 +1386,7 @@
               <option value="Graphene Coating (Bike)">Graphene Coating (Bike)</option>
               <option value="Car/Bike Detailing">Car/Bike Detailing</option>
               <option value="Foam Wash">Foam Wash</option>
-              <option value="Interior Cleaning">Interior Cleaning</option>
+              <option value="Interior Detailing">Interior Detailing</option>
               <option value="Underbody Coating">Underbody Coating</option>
               <option value="Custom Painting">Custom Painting</option>
               <option value="Paint Protection Film (PPF)">Paint Protection Film (PPF)</option>
@@ -1222,15 +1396,27 @@
             </select>
           </div>
           <div class="form-group"><textarea id="booking-message" rows="3" placeholder="Additional details or specific vehicle info..."></textarea></div>
-          <button type="submit" class="btn"><i class="fab fa-whatsapp"></i> Request Appointment</button>
+          <button type="submit" class="btn"><i class="fab fa-whatsapp"></i> <span>Request Appointment</span> <div class="loading-spinner"></div></button>
         </form>
       </div>
     </div>
   </section>
 
   <section id="contact" class="section fade-in-section">
+    <div class="particles">
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+    </div>
     <div class="container">
-      <div class="section-title"><h2>Feedback </h2></div>
+      <div class="section-title"><h2>Feedback & Location</h2></div>
       <div class="contact-wrapper">
         <form class="contact-form" id="whatsapp-form">
           <div class="form-group"><input type="text" id="name" placeholder="Your Name" required></div>
@@ -1251,8 +1437,6 @@
         <div class="footer-col">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="#home">Home</a></li>
-
             <li><a href="#services">Services</a></li>
             <li><a href="#our-work">Our Work</a></li>
             <li><a href="#booking">Booking</a></li>
@@ -1351,15 +1535,23 @@
 
       document.getElementById('booking-form').addEventListener('submit', e => {
         e.preventDefault();
-        const name = document.getElementById('booking-name').value;
-        const phone = document.getElementById('booking-phone').value;
-        const date = document.getElementById('booking-date').value;
-        const time = document.getElementById('booking-time').value;
-        const service = document.getElementById('booking-service').value;
-        const message = document.getElementById('booking-message').value;
-        let text = `*Appointment Request*\nName: ${name}\nPhone: ${phone}\nDate: ${date}\nTime: ${time}\nService: ${service}`;
-        if (message) text += `\nDetails: ${message}`;
-        window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`, '_blank');
+        const submitButton = e.target.querySelector('button');
+        submitButton.classList.add('loading');
+        submitButton.disabled = true;
+
+        setTimeout(() => {
+          const name = document.getElementById('booking-name').value;
+          const phone = document.getElementById('booking-phone').value;
+          const date = document.getElementById('booking-date').value;
+          const time = document.getElementById('booking-time').value;
+          const service = document.getElementById('booking-service').value;
+          const message = document.getElementById('booking-message').value;
+          let text = `*Appointment Request*\nName: ${name}\nPhone: ${phone}\nDate: ${date}\nTime: ${time}\nService: ${service}`;
+          if (message) text += `\nDetails: ${message}`;
+          window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`, '_blank');
+          submitButton.classList.remove('loading');
+          submitButton.disabled = false;
+        }, 2000);
       });
 
       document.getElementById('whatsapp-form').addEventListener('submit', e => {
@@ -1379,4 +1571,3 @@
   </script>
 </body>
 </html>
-
